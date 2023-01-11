@@ -1,0 +1,241 @@
+/*----------VIONA PRODUCTS PAGE----------*/
+.products-section{
+    .general-row{
+        width: 100%;
+        padding: 50px 0;
+        .left-wrapper{
+            width: 100%;
+            @include column-center;
+        }
+        .type-filter-form{
+            width: 100%;
+            @include column-center;
+            .filter-item{
+                width: 100%;
+            }
+            .filter-collapse-button{
+                margin-bottom: 15px;
+            }
+            .filter-collapse{
+                width: 100%;
+                border: 1px solid #EFEFEF;
+                border-top: none;
+                border-radius: 0 0 5px 5px;
+                transform: translateY(-20px);
+                width: 100%;
+                padding: 15px;
+                padding-top: 25px;
+                .checkbox-wrapper{
+                    width: 100%;
+                    @include row-start;
+                    flex-wrap: wrap;
+                    .form-check{
+                        padding-right: 25px;
+                    }
+                }
+            }
+            .price-inputs{
+                width: 100%;
+                @include center;
+                .row{
+                    width: 100%;
+                    .col-6{
+                        padding: 0;
+                    }
+                }
+                input{
+                    width: 100%;
+                    max-width: 400px;
+                    border: 1px solid var(--black-3);
+                    padding: 10px 15px;
+                    border-radius: 10px;
+                    outline: none;
+                    &:first-child{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .colors-wrapper{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                max-height: 200px;
+                overflow-y: auto;
+                .color-button{
+                    margin-bottom: 5px;
+                    margin-right: 25px;
+                    .color{
+                        margin-right: 10px;
+                    }
+                    .name{
+                        font-weight: 500;
+                    }
+                }
+            }
+            .buttons{
+                @include column-center;
+                width: 100%;
+                button{
+                    width: 100%;
+                    padding: 15px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    border-radius: 10px;
+                    &:first-child{
+                        margin-bottom: 10px;
+                    }
+                }
+                .confirm-button{
+                    background-color: var(--bg-color-1);
+                    color: var(--t-color-3);
+                    &:hover{
+                        background-color: var(--bg-color-2);
+                    }
+                }
+                .reset-button{
+                    border: 1px solid var(--d-color-5);
+                    color: var(--t-color-5);
+                    &:hover{
+                        background-color: var(--bg-color-5);
+                        color: var(--t-color-3);
+                        animation: reset-button 0.1s ease 5;
+                    }
+                }
+            }
+            
+        }
+        .right-wrapper{
+            width: 100%;
+            @include column-center;
+            .sort-filter-form{
+                width: 100%;
+                border: 1px solid var(--black-2);
+                margin-bottom: 10px;
+                @include column-center;
+                .filter-item{
+                    width: 100%;
+                    @include s-between;
+                    padding: 15px;
+                    cursor: pointer;
+                    border-bottom: 1px solid var(--black-2);
+                    &:last-child{
+                        border: none;
+                    }
+                    span{
+                        font-weight: 500;
+                    }
+                    i{
+                        color: var(--t-color-1);
+                    }
+                    &:hover span{
+                            color: var(--t-color-1);
+                        }
+                }
+            }
+            
+        }
+    }
+}
+
+/*------filter collapse button------*/
+.filter-collapse-button{
+    width: 100%;
+    background-color: #EFEFEF;
+    @include s-between;
+    padding: 15px;
+    border-radius: 10px;
+    span{
+        font-weight: 500;
+    }
+}
+
+
+/*--------color button--------*/
+.color-button{
+    @include row-start;
+    cursor: pointer;
+    .color{
+        @include center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        span{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+    }
+}
+.color-button.active .color{
+    border-color: var(--black-5);
+}
+
+/*-------------product modal-------------*/
+.product-modal{
+    .modal-body::-webkit-scrollbar-thumb{
+        background-color: var(--bg-color-2);
+    }
+    .close-button{
+        border-color: var(--d-color-2);
+    i{
+        color: var(--t-color-2);
+        font-size: 24px;
+    }
+    &:hover{
+        background-color: var(--bg-color-2);
+    }
+    &:hover i{
+        color: var(--t-color-3);
+    }
+    }
+    .modal-header{
+        @include row-end;
+        border: none;
+        padding: 0 15px;
+    }
+    .product-header{
+        width: 100%;
+        position: relative;
+        .product-name{
+            font-size: 26px;
+        }
+        .product-stars{
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .favorite-button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 45px;
+            height: 45px;
+            i{
+                font-size: 18px;
+            }
+        }
+        @include column-start;
+    }
+    .modal-image{
+        width: 100%;
+        @include column-center;
+    }
+    
+    .product-price{
+        .new{
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+    }
+    .right{
+        width: 100%;
+        @include column-start;
+        .confirm-wrap{
+            width: 100%;
+        }
+    }
+}
+

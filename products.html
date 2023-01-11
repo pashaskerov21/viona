@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viona</title>
+    <link rel="icon" href="image/logo/head-logo.png">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/viona-main.css">
+</head>
+<body>
+
+    <!------------PAGE TOOLS------------>
+    <button class="page-scroll-button d-none"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="phone-toolbar d-none d-md-none">
+        <div class="button call"><a href="#">Zəng et</a></div>
+        <div class="button chat"><a href="#">Bizə yaz</a></div>
+    </div>
+    <div class="mobile-toolbar d-none d-md-none">
+        <div class="general-links row">
+            <a href="#" class="col-6 furset"><i class="fa-solid fa-bell"></i>Fürsətlər</a>
+            <a href="basket.html" class="col-3">
+                <div class="icon">
+                    <img src="image/icon/basket-icon-2.png">
+                    <span class="amount-badge basket">0</span>
+                </div>
+            </a>
+            <a href="favori-products.html" class="col-3">
+                <div class="icon">
+                    <img src="image/icon/heart-icon.png">
+                    <span class="amount-badge favori">0</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="web-toolbar d-none">
+        <div class="button">
+            <div class="icon furset">
+                <img src="image/icon/furset-icon.png">
+            </div>
+            <a href="#" class="label">Fürsətlər</a>
+        </div>
+        <div class="button">
+            <div class="icon">
+                <img src="image/icon/basket-icon-2.png">
+                <span class="amount-badge basket">0</span>
+            </div>
+            <a href="basket.html" class="label">Səbət</a>
+        </div>
+        <div class="button">
+            <div class="icon">
+                <img src="image/icon/heart-icon.png">
+                <span class="amount-badge favori">0</span>
+            </div>
+            <a href="favori-products.html" class="label">Favori</a>
+        </div>
+    </div>
+
+    <!--------HEADER-------->
+    <header>
+        <nav class="top-navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 col-start">
+                        <a href="#" class="phone-link">*1001</a>
+                    </div>
+                    <div class="col-10 col-end">
+                        <div class="sosial-icons px-lg-2">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <div class="top-nav-language d-none d-lg-flex">
+                            <a href="#" class="active">Az</a>
+                            <a href="#">En</a>
+                            <a href="#">Ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="mobile-header d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-start">
+                        <a href="index.html" class="viona-logo"><img src="image/logo/viona-logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-8 col-end">
+                        <a href="login.html" class="login-button me-3"><i class="fa-regular fa-circle-user"></i></a>
+                        <button class="search-button me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#search-offcanvas">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <div class="dropdown language-dropdown me-3">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <a href="#">Az</a>
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="links">
+                                    <a href="#">En</a>
+                                    <a href="#">Ru</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#header-offcanvas">
+                            <i class="fa-sharp fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="general-header d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-start">
+                        <a href="index.html" class="viona-logo"><img src="image/logo/viona-logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-6 col-center">
+                        <div class="search-input">
+                            <form action="#">
+                                <input type="text" class="form-control">
+                                <button><img src="image/icon/search-icon.png"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-3 col-end">
+                        <div class="general-icons">
+                            <a href="#" class="furset-icon">
+                                <div class="icon">
+                                    <img src="image/icon/furset-icon.png">
+                                </div>
+                                <span>Fürsətlər</span>
+                            </a>
+                            <a href="login.html" class="item">
+                                <div class="icon">
+                                    <i class="fa-regular fa-circle-user"></i>
+                                </div>
+                                <span>Giriş</span>
+                            </a>
+                            <a href="basket.html" class="item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>Səbət</span>
+                            </a>
+                            <a href="favori-products.html" class="item">
+                                <div class="icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <span>Favori</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories-wrapper">
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/icon/qonaq-icon.png">
+                        </div>
+                        <span>Qonaq otağı</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/icon/yataq-icon.png">
+                        </div>
+                        <span>Yataq otağı</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/icon/usaq-icon.png">
+                        </div>
+                        <span>Uşaq otağı</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/icon/metbex-icon.png">
+                        </div>
+                        <span>Mətbəx</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/icon/stol-icon.png">
+                        </div>
+                        <span>Stol-stul</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/icon/yumsaq-icon.png">
+                        </div>
+                        <span>Yumşaq mebel</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <nav class="fixed-header fixed-top d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-start">
+                        <a href="index.html" class="viona-logo"><img src="image/logo/viona-logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-8 col-end">
+                        <a href="login.html" class="login-button me-3"><i class="fa-regular fa-circle-user"></i></a>
+                        <button class="search-button me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#search-offcanvas">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <div class="dropdown language-dropdown me-3">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <a href="#">Az</a>
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="links">
+                                    <a href="#">En</a>
+                                    <a href="#">Ru</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#header-offcanvas">
+                            <i class="fa-sharp fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-start" id="header-offcanvas">
+            <div class="offcanvas-header">
+                <a href="index.html" class="viona-logo"><img src="image/logo/viona-logo.png" alt="logo"></a>
+                <button class="close-button" data-bs-dismiss="offcanvas">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="categories-wrapper secondary">
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/icon/qonaq-icon.png">
+                        </div>
+                        <span>Qonaq otağı</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/icon/yataq-icon.png">
+                        </div>
+                        <span>Yataq otağı</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/icon/usaq-icon.png">
+                        </div>
+                        <span>Uşaq otağı</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/icon/metbex-icon.png">
+                        </div>
+                        <span>Mətbəx</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/icon/stol-icon.png">
+                        </div>
+                        <span>Stol-stul</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/icon/yumsaq-icon.png">
+                        </div>
+                        <span>Yumşaq mebel</span>
+                    </a>
+                </div>
+                
+                <div class="canvas-links">
+                    <a href="about.html">Haqqımızda</a>
+                    <a href="products.html">Məhsullar</a>
+                    <a href="shops.html">Mağazalarımız</a>
+                    <a href="contact.html">Əlaqə</a>
+                </div>
+                <div class="sosial-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="canvas-phone">
+                    <a href="#"><i class="fa-solid fa-phone"></i> *1001</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i> 055 255 67 89</a>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-top" id="search-offcanvas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-center">
+                        <div class="search-input">
+                            <form action="#">
+                                <input type="text" class="form-control" placeholder="Axtar">
+                                <button><img src="image/icon/search-icon.png"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-2 col-end">
+                        <button class="close-button" data-bs-dismiss="offcanvas">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="products-section">
+            <div class="container">
+                <div class="general-row row w-100">
+                    <div class="col-12 col-lg-3 mb-5">
+                        <div class="left-wrapper">
+                            <button class="open-filters-button d-lg-none">
+                                <i class="fa-solid fa-filter"></i>
+                                <span>Filterlə</span>
+                            </button>
+                            <form action="#" class="type-filter-form d-none d-lg-flex">
+                                <div class="filter-item">
+                                    <button class="filter-collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#room-filter">
+                                        <span>Otaq</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="collapse show filter-collapse" id="room-filter">
+                                        <div class="checkbox-wrapper">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="room-1">
+                                                <label for="room-1">Mətbəx</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="room-2">
+                                                <label for="room-2">Qonaq otağı</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="room-3">
+                                                <label for="room-3">Uşağı</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-item">
+                                    <button class="filter-collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#category-filter">
+                                        <span>Kateqoriya</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="collapse show filter-collapse" id="category-filter">
+                                        <div class="checkbox-wrapper">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="category-1">
+                                                <label for="category-1">Kateqoriya 1</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="category-2">
+                                                <label for="category-2">Kateqoriya 2</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="category-3">
+                                                <label for="category-3">Kateqoriya 3</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-item">
+                                    <button class="filter-collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#price-filter">
+                                        <span>Qiymət</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="collapse show filter-collapse" id="price-filter">
+                                        <div class="price-inputs">
+                                            <div class="row">
+                                                <div class="col-6 pe-1"><input type="text" placeholder="Min.₼"></div>
+                                                <div class="col-6 ps-1"><input type="text" placeholder="Max.₼"></div> 
+                                            </div>                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-item">
+                                    <button class="filter-collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#size-filter">
+                                        <span>Ölçü</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="collapse show filter-collapse" id="size-filter">
+                                        <div class="checkbox-wrapper">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="size-1">
+                                                <label for="size-1">12x12</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="size-2">
+                                                <label for="size-2">12x15</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="size-3">
+                                                <label for="size-3">12x24</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="size-4">
+                                                <label for="size-4">13x13</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="size-5">
+                                                <label for="size-5">18x18</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="size-6">
+                                                <label for="size-6">24x24</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-item">
+                                    <button class="filter-collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#color-filter">
+                                        <span>Qiymət</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="collapse show filter-collapse" id="color-filter">
+                                        <div class="colors-wrapper">
+                                            <div class="color-button active">
+                                                <div class="color"><span style="background-color: #DB353A;"></span></div>
+                                                <span class="name">Qırmızı</span>
+                                            </div>
+                                            <div class="color-button">
+                                                <div class="color"><span style="background-color: #DBDBDB;"></span></div>
+                                                <span class="name">Ağ</span>
+                                            </div>
+                                            <div class="color-button">
+                                                <div class="color"><span style="background-color: #066FB1;"></span></div>
+                                                <span class="name">Mavi</span>
+                                            </div>
+                                            <div class="color-button">
+                                                <div class="color"><span style="background-color: #E0C813;"></span></div>
+                                                <span class="name">Sarı</span>
+                                            </div>
+                                            <div class="color-button">
+                                                <div class="color"><span style="background-color: #4B4B4D;"></span></div>
+                                                <span class="name">Qara</span>
+                                            </div>
+                                            <div class="color-button">
+                                                <div class="color"><span style="background-color: #066FB1;"></span></div>
+                                                <span class="name">Mavi</span>
+                                            </div>
+                                            <div class="color-button">
+                                                <div class="color"><span style="background-color: #E0C813;"></span></div>
+                                                <span class="name">Sarı</span>
+                                            </div>
+                                            <div class="color-button">
+                                                <div class="color"><span style="background-color: #4B4B4D;"></span></div>
+                                                <span class="name">Qara</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <button type="submit" class="confirm-button">Təsdiqlə</button>
+                                    <button type="reset" class="reset-button">Sil</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <div class="right-wrapper">
+                            <form action="#" class="sort-filter-form">
+                                <div class="filter-item">
+                                    <span>Qiymətinə görə</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <div class="filter-item">
+                                    <span>Populyarlığına görə</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <div class="filter-item">
+                                    <span>Yeni Kolleksiya</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </form>
+                            <!--PRODUCT CARDS-->
+                            <div class="products-row row">
+                                <div class="col-12 col-sm-6 col-xl-4">
+                                    <div class="product-card">
+                                        <div class="header">
+                                            <span class="badge endirim">Endirim</span>
+                                        </div>
+                                        <div class="body">
+                                            <div class="product-image">
+                                                <img src="image/products/product-1.png">
+                                                <button class="product-review-button" type="button" data-bs-toggle="modal" data-bs-target="#product-modal-1">
+                                                    Ön baxış
+                                                </button>
+                                            </div>
+                                            <div class="content">
+                                                <a href="#" class="product-name">Divan</a>
+                                                <div class="product-stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                                <span class="product-text">Lorem ipsum dolor</span>
+                                                <div class="product-price">
+                                                    <span class="old">900 ₼</span>
+                                                    <span class="new">790 ₼</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-xl-4">
+                                    <div class="product-card">
+                                        <div class="header">
+                                            <span class="badge endirim">Endirim</span>
+                                        </div>
+                                        <div class="body">
+                                            <div class="product-image">
+                                                <img src="image/products/product-2.png">
+                                                <button class="product-review-button" type="button" data-bs-toggle="modal" data-bs-target="#product-modal-2">
+                                                    Ön baxış
+                                                </button>
+                                            </div>
+                                            <div class="content">
+                                                <a href="#" class="product-name">Stol</a>
+                                                <div class="product-stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                                <span class="product-text">Lorem ipsum dolor</span>
+                                                <div class="product-price">
+                                                    <span class="old">900 ₼</span>
+                                                    <span class="new">790 ₼</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-xl-4">
+                                    <div class="product-card">
+                                        <div class="header">
+                                            <span class="badge endirim">Endirim</span>
+                                        </div>
+                                        <div class="body">
+                                            <div class="product-image">
+                                                <img src="image/products/product-3.png">
+                                                <button class="product-review-button">
+                                                    Ön baxış
+                                                </button>
+                                            </div>
+                                            <div class="content">
+                                                <a href="#" class="product-name">Kreslo</a>
+                                                <div class="product-stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                                <span class="product-text">Lorem ipsum dolor</span>
+                                                <div class="product-price">
+                                                    <span class="old">900 ₼</span>
+                                                    <span class="new">790 ₼</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-xl-4">
+                                    <div class="product-card">
+                                        <div class="header">
+                                            <span class="badge new">Yeni</span>
+                                        </div>
+                                        <div class="body">
+                                            <div class="product-image">
+                                                <img src="image/products/product-4.png">
+                                                <button class="product-review-button">
+                                                    Ön baxış
+                                                </button>
+                                            </div>
+                                            <div class="content">
+                                                <a href="#" class="product-name">Stol</a>
+                                                <div class="product-stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                                <span class="product-text">Lorem ipsum dolor</span>
+                                                <div class="product-price">
+                                                    <span class="old">900 ₼</span>
+                                                    <span class="new">790 ₼</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-xl-4">
+                                    <div class="product-card">
+                                        <div class="header">
+                                            <span class="badge new">Yeni</span>
+                                        </div>
+                                        <div class="body">
+                                            <div class="product-image">
+                                                <img src="image/products/product-5.png">
+                                                <button class="product-review-button">
+                                                    Ön baxış
+                                                </button>
+                                            </div>
+                                            <div class="content">
+                                                <a href="#" class="product-name">Stol</a>
+                                                <div class="product-stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                                <span class="product-text">Lorem ipsum dolor</span>
+                                                <div class="product-price">
+                                                    <span class="old">900 ₼</span>
+                                                    <span class="new">790 ₼</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-xl-4">
+                                    <div class="product-card">
+                                        <div class="header">
+                                            <span class="badge new">Yeni</span>
+                                        </div>
+                                        <div class="body">
+                                            <div class="product-image">
+                                                <img src="image/products/product-6.png">
+                                                <button class="product-review-button">
+                                                    Ön baxış
+                                                </button>
+                                            </div>
+                                            <div class="content">
+                                                <a href="#" class="product-name">Uşaq otağı</a>
+                                                <div class="product-stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                                <span class="product-text">Lorem ipsum dolor</span>
+                                                <div class="product-price">
+                                                    <span class="old">900 ₼</span>
+                                                    <span class="new">790 ₼</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-xl-4">
+                                    <div class="product-card">
+                                        <div class="header">
+                                            <span class="badge endirim">Endirim</span>
+                                        </div>
+                                        <div class="body">
+                                            <div class="product-image">
+                                                <img src="image/products/product-7.png">
+                                                <button class="product-review-button">
+                                                    Ön baxış
+                                                </button>
+                                            </div>
+                                            <div class="content">
+                                                <a href="#" class="product-name">Divan</a>
+                                                <div class="product-stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                                <span class="product-text">Lorem ipsum dolor</span>
+                                                <div class="product-price">
+                                                    <span class="old">900 ₼</span>
+                                                    <span class="new">790 ₼</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-xl-4">
+                                    <div class="product-card">
+                                        <div class="header">
+                                            <span class="badge endirim">Endirim</span>
+                                        </div>
+                                        <div class="body">
+                                            <div class="product-image">
+                                                <img src="image/products/product-8.png">
+                                                <button class="product-review-button">
+                                                    Ön baxış
+                                                </button>
+                                            </div>
+                                            <div class="content">
+                                                <a href="#" class="product-name">Uşaq otağı</a>
+                                                <div class="product-stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                                <span class="product-text">Lorem ipsum dolor</span>
+                                                <div class="product-price">
+                                                    <span class="old">900 ₼</span>
+                                                    <span class="new">790 ₼</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-xl-4">
+                                    <div class="product-card">
+                                        <div class="header">
+                                            <span class="badge endirim">Endirim</span>
+                                        </div>
+                                        <div class="body">
+                                            <div class="product-image">
+                                                <img src="image/products/product-9.png">
+                                                <button class="product-review-button">
+                                                    Ön baxış
+                                                </button>
+                                            </div>
+                                            <div class="content">
+                                                <a href="#" class="product-name">Divan</a>
+                                                <div class="product-stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                                <span class="product-text">Lorem ipsum dolor</span>
+                                                <div class="product-price">
+                                                    <span class="old">900 ₼</span>
+                                                    <span class="new">790 ₼</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="active">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#" class="dot-btn">...</a>
+                                        <a href="#">9</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--PRODUCT MODALS-->
+                            <div class="modal fade product-modal" id="product-modal-1">
+                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button class="close-button" data-bs-dismiss="modal">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="left">
+                                                        <div class="product-header">
+                                                            <a href="#" class="product-name">Divan</a>
+                                                            <span class="product-text">Lorem ipsum dolor</span>
+                                                            <div class="d-flex">
+                                                                <div class="product-stars">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-regular fa-star"></i>
+                                                                    <i class="fa-regular fa-star"></i>
+                                                                </div>
+                                                                <span class="ms-3">(12)</span>
+                                                            </div>
+                                                            <button class="favorite-button">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                                <i class="d-none fa-solid fa-heart"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-image">
+                                                            <div class="swiper modal-top-swiper">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-about/img-1.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-about/img-1.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-about/img-1.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-about/img-1.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-about/img-1.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-about/img-1.png">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper modal-thumb-swiper" thumbsSlider="">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-about/img-1.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-about/img-1.1.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-about/img-1.2.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-about/img-1.3.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-about/img-1.4.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-about/img-1.5.png">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="product-about.html" class="modal-button">Ətraflı</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="right">
+                                                        <div class="product-price">
+                                                            <span class="new">3.190 ₼</span>
+                                                        </div>
+                                                        <div class="product-properties">
+                                                            <span class="header">Xüsusiyyətləri</span>
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <span class="label">Hündürlük</span>
+                                                                    <span class="property">5sm</span>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <span class="label">Dərinlik</span>
+                                                                    <span class="property">55sm</span>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <span class="label">En</span>
+                                                                    <span class="property">180sm</span>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <span class="label"></span>
+                                                                    <span class="property">2 oturacaqlı</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="description-button" data-bs-toggle="collapse" data-bs-target="#description-collapse">
+                                                            <span>Təsviri</span>
+                                                            <i class="fa-solid fa-chevron-down"></i>
+                                                        </button>
+                                                        <div class="collapse show" id="description-collapse">
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                                Mollitia ratione repellat praesentium labore totam, quos 
+                                                                reprehenderit voluptate consequatur velit explicabo veritatis 
+                                                                dolore minus doloribus asperiores, obcaecati hic incidunt eos necessitatibus!
+                                                            </p>
+                                                        </div>
+                                                        <div class="product-confirm">
+                                                            <div class="product-amount">
+                                                                <button class="decrement-button" type="button">-</button>
+                                                                <span class="amount-span">1</span>
+                                                                <button class="increment-button" type="button">+</button>
+                                                            </div>
+                                                            <button class="basket-button-2">
+                                                                <img class="active-icon" src="image/icon/basket-icon.png">
+                                                                <div class="name">
+                                                                    <img src="image/icon/basket-icon.png">
+                                                                    <span>Səbətə at</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade product-modal" id="product-modal-2">
+                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button class="close-button" data-bs-dismiss="modal">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="left">
+                                                        <div class="product-header">
+                                                            <a href="#" class="product-name">Stol</a>
+                                                            <span class="product-text">Lorem ipsum dolor</span>
+                                                            <div class="d-flex">
+                                                                <div class="product-stars">
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-solid fa-star"></i>
+                                                                    <i class="fa-regular fa-star"></i>
+                                                                    <i class="fa-regular fa-star"></i>
+                                                                </div>
+                                                                <span class="ms-3">(12)</span>
+                                                            </div>
+                                                            <button class="favorite-button">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                                <i class="d-none fa-solid fa-heart"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-image">
+                                                            <div class="swiper modal-top-swiper">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-2.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-2.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-2.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-2.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-2.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-2.png">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper modal-thumb-swiper" thumbsSlider="">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-2.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-2.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-2.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-2.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-2.png">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="image/products/product-2.png">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="product-about.html" class="modal-button">Ətraflı</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="right">
+                                                        <div class="product-price">
+                                                            <span class="new">3.190 ₼</span>
+                                                        </div>
+                                                        <div class="product-properties">
+                                                            <span class="header">Xüsusiyyətləri</span>
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <span class="label">Hündürlük</span>
+                                                                    <span class="property">5sm</span>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <span class="label">Dərinlik</span>
+                                                                    <span class="property">55sm</span>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <span class="label">En</span>
+                                                                    <span class="property">180sm</span>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <span class="label"></span>
+                                                                    <span class="property">2 oturacaqlı</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="description-button" data-bs-toggle="collapse" data-bs-target="#description-collapse">
+                                                            <span>Təsviri</span>
+                                                            <i class="fa-solid fa-chevron-down"></i>
+                                                        </button>
+                                                        <div class="collapse show" id="description-collapse">
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                                Mollitia ratione repellat praesentium labore totam, quos 
+                                                                reprehenderit voluptate consequatur velit explicabo veritatis 
+                                                                dolore minus doloribus asperiores, obcaecati hic incidunt eos necessitatibus!
+                                                            </p>
+                                                        </div>
+                                                        <div class="product-confirm">
+                                                            <div class="product-amount">
+                                                                <button class="decrement-button" type="button">-</button>
+                                                                <span class="amount-span">1</span>
+                                                                <button class="increment-button" type="button">+</button>
+                                                            </div>
+                                                            <button class="basket-button-2">
+                                                                <img class="active-icon" src="image/icon/basket-icon.png">
+                                                                <div class="name">
+                                                                    <img src="image/icon/basket-icon.png">
+                                                                    <span>Səbətə at</span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-------FOOTER------->
+    <footer>
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-center">
+                        <a href="index.html" class="viona-logo"><img src="image/logo/footer-logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-center">
+                        <div class="footer-links">
+                            <a href="about.html">Haqqımızda</a>
+                            <a href="products.html">Məhsullar</a>
+                            <a href="shops.html">Mağazalarımız</a>
+                            <a href="contact.html">Əlaqə</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-center">
+                        <div class="footer-links">
+                            <a href="suggestions.html">Şikayətlər və təkliflər</a>
+                            <a href="vacancy.html">Vakansiyalar</a>
+                            <a href="faq.html">Faq</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-center">
+                        <div class="footer-links">
+                            <a href="#">*1001</a>
+                            <a href="#">055 225 67 89</a>
+                            <div class="sosial-icons">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <a href="#">Proton.az</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/swiper.js"></script>
+</body>
+</html>

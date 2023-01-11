@@ -1,0 +1,318 @@
+/*--------------HEADER COMPONENETS--------------*/
+
+/*TOP NAVBAR*/
+
+/*------------PHONE LINK------------*/
+.phone-link{
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    color: var(--t-color-1);
+    &:hover{
+        color: var(--t-color-2);
+    }
+}
+/*-----------SOSIAL ICONS-----------*/
+.sosial-icons{
+    @include center;
+    a{
+        font-size: var(--fs-md);
+        @include center;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        margin-right: 5px;
+        color: var(--t-color-1);
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            background-color: var(--bg-color-1);
+            animation: pulse-1 1s 0.3s ease infinite;
+            color: var(--t-color-3);
+        }
+    }
+}
+
+/*----------TOP NAV LANGUAGE----------*/
+.top-nav-language{
+    padding: 0 15px;
+    border-left: 1px solid var(--black-1);
+    @include center;
+    a{
+        text-decoration: underline;
+        font-size: var(--fs-md);
+        color: var(--t-color-1);
+        font-weight: bold;
+        margin-right: 15px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    a.active{
+        color: var(--t-color-2);
+    }
+}
+
+
+/*MOBILE HEADER*/
+
+/*--------VIONA LOGO--------*/
+.viona-logo{
+    img{
+        width: 100%;
+        max-width: 220px;
+        object-fit: contain;
+    }
+}
+
+/*--------MENU SEARCH LOGIN BUTTONS--------*/
+.menu-button,
+.search-button,
+.login-button{
+    font-size: 20px;
+    color: var(--t-color-1);
+    &:hover{
+        color: var(--t-color-2);
+    }
+}
+
+/*-------------LANGUAGE DROPDOWN-------------*/
+.language-dropdown{
+    .dropdown-toggle{
+        a{
+            color: var(--t-color-1);
+            font-size: 20px;
+            font-weight: 600;
+        }
+        &::after{
+            display: none;
+        }
+        &:hover a{
+            color: var(--t-color-2);
+        }
+    }
+    .dropdown-menu{
+        min-width: 70px;
+        .links{
+            width: 100%;
+            padding: 0 5px;
+            @include column-center;
+            a{
+                width: 100%;
+                text-align: center;
+                color: var(--t-color-1);
+                font-size: 20px;
+                font-weight: 700;
+                &:hover{
+                    background-color: var(--t-color-1);
+                    color: var(--t-color-3);
+                }
+            }
+        }
+    }
+}
+
+
+/*GENERAL HEADER*/
+
+/*------------SEARCH INPUT------------*/
+.search-input{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    @include center;
+    background-color: #EDEDED;
+    input{
+        padding: 12px 15px;
+        padding-right: 45px;
+        width: 100%;
+        background-color: #EDEDED !important;
+        &::placeholder{
+            color: var(--t-color-1);
+            font-weight: 700;
+        }
+    }
+    button{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin: 0 10px;
+    }
+    form{
+        width: 100%;
+        position: relative;
+    }
+}
+
+/*-----------GENERAL ICONS-----------*/
+.general-icons{
+    @include center;
+    padding: 10px;
+    .furset-icon{
+        @include column-center;
+        margin-right: 5px;
+        .icon{
+            width: 45px;
+            height: 45px;
+            @include center;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            background: var(--gradient-1);
+        }
+        span{
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--black-9);
+        }
+        &:hover{
+            .icon{
+                img{
+                    animation: furset-icon 0.2s ease 5;
+                }
+            }
+            span{
+                color: var(--t-color-2);
+            }
+        }
+    }
+    .item{
+        @include column-center;
+        margin-right: 5px;
+        &:last-child{
+            margin-right: 0;
+        }
+        .icon{
+            width: 45px;
+            height: 45px;
+            @include center;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            i{
+                font-size: 26px;
+                color: var(--black-5);
+            }
+        }
+        span{
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--black-9);
+        }
+        &:hover{
+            .icon{
+                transform: scale(1.1);
+                i{
+                    color: var(--t-color-2);
+                }
+            }
+            span{
+                color: var(--t-color-1);
+            }
+        }
+    }
+}
+
+/*-----------CATEGORY LINK-----------*/
+.categories-wrapper{
+    width: 100%;
+    @include s-between;
+    padding: 30px 0;
+    .category-link{
+        padding: 0;
+        @include center;
+        .icon{
+            @include center;
+            margin-right: 10px; 
+        }
+        span{
+            color: var(--t-color-4);
+            font-size: 16px;
+            font-weight: 500;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 0;
+                bottom: -5px;
+                left: 0;
+                background-color: var(--bg-color-2);
+                transition: 0.5s;
+            }
+        }
+        &:nth-child(2n+1){
+            span{
+                &::after{
+                    background-color: var(--bg-color-1);
+                }
+            }
+        }
+        &:hover span{
+            color: var(--t-color-2);
+            &::after{
+                width: 100%;
+            }
+        }
+        &:nth-child(2n+1):hover span{
+            color: var(--t-color-1);
+        }
+    }
+    &.secondary{
+        flex-direction: column;
+        padding: 10px 0;
+        .category-link{
+            justify-content: flex-start;
+            width: 100%;
+            padding: 7px 0;
+            .icon{
+                margin-right: 10px;
+                width: 40px;
+            }
+            span{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+/*----------MENU OFFCANCAS----------*/
+#header-offcanvas{
+    .viona-logo{
+        max-width: 180px;
+    }
+    .canvas-links{
+        width: 100%;
+        @include column-start;
+        margin-bottom: 10px;
+        a{
+            font-size: 18px;
+            color: var(--t-color-1);
+            padding: 10px;
+            font-weight: 600;
+            &:hover{
+                background-color: var(--bg-color-1);
+                color: var(--t-color-3);
+            }
+        }
+    }
+    .sosial-icons{
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+    .canvas-phone{
+        width: 100%;
+        @include row-start;
+        flex-wrap: wrap;
+        a{
+            padding: 10px;
+            color: var(--t-color-1);
+            font-weight: 600;
+            &:hover{
+                i{
+                    animation: phone-animation 0.2s ease 5;
+                }
+            }
+        }
+    }
+}

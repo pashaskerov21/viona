@@ -1,0 +1,113 @@
+.product-about-wrapper{
+    width: 100%;
+    @include center;
+    .row{
+        width: 100%;
+    }
+    .col-12{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .product-about-image{
+        width: 100%;
+        @include column-center;
+        margin-bottom: 30px;
+    }
+    .product-content{
+        width: 100%;
+        @include column-center;
+        .info{
+            @include column-center;
+            width: 100%;
+            .product-name,
+            .product-stars,
+            .product-price,
+            .code-wrap{
+                margin-bottom: 10px;
+            }
+            .code-wrap{
+                .label{
+                    color: var(--black-5);
+                    margin-right: 20px;
+                }
+            }
+        }
+        .product-details-form{
+            width: 100%;
+            @include column-center;
+            padding: 10px 0;
+            .label{
+                color: var(--black-5);
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+/*---------PRODUCT CANVAS---------*/
+.product-canvas{
+    .offcanvas-header{
+        justify-content: flex-end;
+    }
+    .product-info{
+        width: 100%;
+        @include column-start;
+        padding: 10px;
+    }
+    .product-name,
+    .product-stars,
+    .product-text{
+        margin-bottom: 10px;
+    }
+}
+
+
+/*----------COMMENTS----------*/
+.comments-wrapper{
+    width: 100%;
+    @include column-center;
+    .comment-item{
+        margin-bottom: 20px;
+        width: 100%;
+        @include column-center;
+        .user-image{
+            @include column-center;
+            max-width: 120px;
+            img{
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+                border-radius: 50%;
+            }
+            .stars-wrapper{
+                @include s-between;
+                width: 100%;
+                max-width: 120px;
+                padding: 15px 0;
+                img{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+        .user-comment{
+            border: 1px solid var(--black-2);
+            padding: 15px;
+            width: 100%;
+            max-width: 650px;
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .comments-wrapper{
+        align-items: flex-start;
+        .comment-item{
+            flex-direction: row;
+            justify-content: flex-start;
+            .user-image{
+                margin-right: 25px;
+            }
+        }
+    }
+}

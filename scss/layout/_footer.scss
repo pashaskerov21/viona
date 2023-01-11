@@ -1,0 +1,59 @@
+/*==================FOOTER===================*/
+footer{
+    width: 100%;
+    @include column-center;
+    .viona-logo{
+        margin-bottom: 40px;
+    }
+    .top{
+        width: 100%;
+        padding: 50px 0;
+        background-color: var(--bg-color-1);
+        .container{
+            @include center;
+            .row{
+                width: 100%;
+            }
+        }
+    }
+    .footer-links{
+        @include column-center;
+        align-self: stretch;
+        padding: 20px 0;
+        a{
+            color: var(--t-color-3);
+            font-weight: 500;
+            font-size: var(--fs-lg);
+            margin-bottom: 10px;
+            position: relative;
+            &:hover::after{
+                transform: scaleX(1);
+                background-color: var(--d-color-3);
+            }
+        }
+    }
+    .sosial-icons{
+        a{
+            &::after{
+                display: none;
+            }
+            &:hover{
+                background-color: var(--bg-color-3);
+                color: var(--bg-color-1);
+                animation: pulse-3 1s ease infinite;
+            }
+        }
+    }
+    .bottom{
+        width: 100%;
+        @include center;
+        text-align: center;
+        padding: 20px 0;
+        background-color: #013761;
+        a{
+            color: var(--t-color-3);
+            font-size: var(--fs-lg);
+            font-weight: 700;
+        }
+    }
+}

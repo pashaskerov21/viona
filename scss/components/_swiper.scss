@@ -1,0 +1,209 @@
+/*================SWIPER==================*/
+.swiper{
+    width: 100%;
+    z-index: 1;
+    .swiper-wrapper{
+        z-index: 1;
+    }
+    .swiper-slide{
+        z-index: 1;
+        @include center;
+    }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-4);
+  opacity: 1;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+.swiper-button-prev i,
+.swiper-button-next i{
+    color: var(--t-color-3);
+}
+.swiper-pagination{
+    bottom: 0;
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: #D9D9D9;
+}
+.swiper-pagination-bullet-active{
+    background: var(--bg-color-1);
+}
+
+/*-----------FURSET CARD SWIPER------------*/
+.furset-card-swiper{
+    .swiper-button-prev,
+    .swiper-button-next{
+        background-color: var(--bg-color-1);
+    }
+    .swiper-button-prev{
+        left: 0;
+    }
+    .swiper-button-next{
+        right: 0;
+    }
+}
+
+/*----------PRODUCTS SWIPER-----------*/
+.products-swiper{
+    padding: 12px 0 50px;
+    .product-card{
+        margin: 5px 0;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        top: 0;
+        height: 100%;
+        background-color: transparent;
+        i{
+            width: 30px;
+            height: 30px;
+            @include center;
+            border-radius: 50%;
+            color: var(--t-color-2);
+            font-size: var(--fs-lg);
+            &:hover{
+                color: var(--t-color-3);
+                background-color: var(--bg-color-2);
+            }
+        }
+    }
+}
+
+/*---------PRODUCT THUMB/TOP SWIPERS---------*/
+.product-thumb-swiper{
+    margin-top: 5px;
+    .swiper-slide{
+        opacity: 0.5;
+    }
+    .swiper-slide-thumb-active{
+        opacity: 1;
+    }
+}
+
+
+
+/*--------ROOM CATEGORY SWIPER---------*/
+.room-category-swiper{
+    padding: 10px 20px 50px;
+    max-width: 1800px;
+    .swiper-slide:nth-child(2n+1) .button{
+        background-color: var(--bg-color-1);
+    }
+}
+
+/*-------------MODAL SWIPER-------------*/
+.modal-top-swiper{
+    img{
+        width: 100%;
+        min-height: 150px;
+        max-height: 270px;
+        max-width: 600px;
+        object-fit: contain;
+    }
+}
+.modal-thumb-swiper{
+    .swiper-button-prev,
+    .swiper-button-next{
+        background-color: var(--bg-color-1);
+        top: 60%;
+    }
+    img{
+        width: 100%;
+        max-width: 150px;
+        height: 50px;
+        object-fit: contain;
+    }
+}
+
+/*--------PRODUCT ABOUT SWIPER--------*/
+.about-top-swiper{
+    .swiper-button-prev,
+    .swiper-button-next{
+        background-color: var(--bg-color-2);
+    }
+    img{
+        width: 100%;
+        min-height: 150px;
+        max-height: 270px;
+        max-width: 600px;
+        object-fit: contain;
+    }
+}
+.about-thumb-swiper{
+    img{
+        width: 100%;
+        max-width: 150px;
+        height: 50px;
+        object-fit: contain;
+    }
+}
+
+/*--------product colors swiper--------*/
+.product-color-swiper{
+    .color-item{
+        @include column-center;
+        button{
+            border: 2px solid transparent;
+        }
+        img{
+            width: 100%;
+            max-width: 150px;
+            height: 70px;
+            object-fit: contain;
+        }
+        span{
+            padding: 10px 0;
+            font-weight: 600;
+        }
+        &.active{
+            button{
+                border-color: var(--d-color-1);
+            }
+        }
+    }
+}
+
+
+/*----------HOME BANNER SWIPER----------*/
+.banner-swiper-section{
+    width: 100%;
+    margin-bottom: 25px;
+    .home-banner-swiper{
+        img{
+            width: 100%;
+            min-height: 150px;
+            max-height: 200px;
+            object-fit: cover;
+        }
+    }
+}
+
+/*-------PARTNERS SWIPER-------*/
+.partners-swiper{
+    padding: 20px 0 70px;
+    img{
+        width: 100%;
+        max-width: 240px;
+        height: 150px;
+        object-fit: contain;
+    }
+}

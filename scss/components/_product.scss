@@ -1,0 +1,290 @@
+/*-----------PRODUCT COMPONENTS-----------*/
+
+/*----------GRADIENT BADGE----------*/
+.gradient-badge{
+    @include center;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--gradient-1);
+    user-select: none;
+    cursor: normal;
+    img{
+        margin-right: 10px;
+        animation: furset-icon 0.2s ease infinite;
+    }
+    span{
+        color: var(--t-color-3);
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+/*----------PRODUCT NAME----------*/
+.product-name{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--t-color-6);
+    &:hover{
+        color: var(--t-color-1);
+    }
+}
+
+/*----------PRODUCT STARS----------*/
+.product-stars{
+    @include center;
+    i{
+        color: #fdcd0d;
+        margin-right: 5px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+/*--------PRODUCT TEXT&CODE--------*/
+.product-text,
+.product-code{
+    font-size: 16px;
+    color: var(--black-5);
+}
+
+/*-----------PRODUCT PRICE-----------*/
+.product-price{
+    @include row-start;
+    .old{
+        font-size: 18px;
+        color: var(--t-color-1);
+        text-decoration: line-through;
+        margin-right: 15px;
+        font-weight: 600;
+    }
+    .new{
+        font-size: 24px;
+        color: var(--t-color-5);
+        font-weight: 700;
+    }
+}
+
+/*--------DATES WRAPPER--------*/
+.dates-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .date-item{
+        @include column-center;
+        border: 1px solid var(--d-color-1);
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 12px;
+        font-weight: 500;
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+        &:last-child{
+            margin-right: 0 !important;
+        }
+    }
+}
+
+
+/*--------PRODUCT IMAGE--------*/
+.product-image{
+    width: 100%;
+    position: relative;
+    img{
+        width: 100%;
+        max-width: 150px;
+        height: 100px;
+        object-fit: contain;
+    }
+    .product-top-swiper{
+        img{
+            width: 100%;
+            max-width: 150px;
+            height: 100px;
+            object-fit: contain;
+        }
+    }
+    .product-thumb-swiper{
+        img{
+            width: 45px;
+            height: 40px;
+            object-fit: contain;
+        }
+    }
+}
+
+/*---------PRODUCT BADGES----------*/
+.badge{
+    padding: 12px;
+    @include center;
+    border-radius: 10px;
+    font-size: 14px;
+    color: var(--t-color-3);
+    font-weight: 500;
+    min-width: 96px;
+    align-self: flex-start;
+    &.endirim{
+        background-color: var(--bg-color-2);
+    }
+    &.new{
+        background-color: var(--bg-color-1);
+    }
+}
+
+/*--------PRODUCT PROPERTIES--------*/
+.product-properties{
+    width: 100%;
+    padding: 15px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    .header{
+        padding-bottom: 10px 0;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .col-6{
+        margin-bottom: 15px;
+        @include column-start;
+    }
+    span{
+        font-size: 14px;
+        &.label{
+            color: var(--black-5);
+            padding: 5px 0;
+        }
+        &.property{
+            font-weight: 500;
+        }
+    }
+}
+@media only screen and (min-width: 380px){
+    .product-properties{
+        span{
+            font-size: 16px;
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .product-properties{
+        span{
+            font-size: 18px;
+        }
+    }
+}
+
+/*--------DESCRIPTION BUTTON--------*/
+.description-button{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--d-color-1);
+    margin: 15px 0;
+    @include s-between;
+    span{
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--t-color-1);
+    }
+    i{
+        font-size: 20px;
+        color: var(--d-color-1);
+    }
+    &:hover{
+        background-color: var(--bg-color-1);
+        span{
+            color: var(--t-color-3);
+        }
+        i{
+            color: var(--t-color-3);
+        }
+    }
+}
+#description-collapse p{padding: 0 10px;}
+
+
+/*---------PRODUCT CONFIRM WRAPPER---------*/
+.product-confirm{
+    @include column-center;
+    width: 100%;
+    margin: 10px 0;
+    .product-amount{
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (min-width: 576px){
+    .product-confirm{
+        flex-direction: row;
+        .product-amount{
+            margin-bottom: 0;
+            margin-right: 15px;
+        }
+    }
+}
+.product-amount{
+    padding: 20px 10px;
+    @include center;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    width: 100%;
+    button{
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background-color: #D1D1D1;
+        color: #fff;
+        font-size: 18px;
+        user-select: none;
+        text-align: center;
+        @include center;
+        &:active{
+            transform: scale(1.5);
+        }
+        &:hover{
+            background-color: var(--bg-color-1);
+        }
+    }
+    .amount-span{
+        min-width: 60px;
+        text-align: center;
+        font-weight: 600;
+    }
+}
+.basket-button-2{
+    width: 100%;
+    padding: 20px 10px;
+    background-color: var(--bg-color-1);
+    border-radius: 5px;
+    .active-icon{
+        width: 32px;
+        object-fit: contain;
+        opacity: 0;
+        display: none;
+    }
+    .name{
+        width: 100%;
+        @include center;
+        img{
+            width: 28px;
+            margin-right: 5px;
+            object-fit: contain;
+        }
+        span{
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--t-color-3);
+        }
+    }
+    &.active{
+        background-color: var(--bg-color-2);
+        .active-icon{
+            display: inline-block;
+            animation: basket-icon 0.6s ease forwards;
+        }
+        .name{
+            display: none;
+        }
+    }
+}

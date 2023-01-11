@@ -1,0 +1,375 @@
+/*------------BUTTONS------------*/
+
+/*---------CLOSE BUTTON----------*/
+.close-button{
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--d-color-1);
+    border-radius: 50%;
+    margin: 10px 0;
+    i{
+        color: var(--t-color-1);
+        font-size: 24px;
+    }
+    &:hover{
+        background-color: var(--bg-color-1);
+    }
+    &:hover i{
+        color: var(--t-color-3);
+    }
+}
+
+
+/*---------BASKET BUTTON----------*/
+.basket-button{
+    width: 100%;
+    min-width: 170px;
+    max-width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    @include center;
+    position: relative;
+    .name{
+        @include center;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        img{
+            width: 25px;
+            margin-right: 7px;
+        }
+        span{
+            color: var(--t-color-3);
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s;
+        background-color: var(--bg-color-1);
+        border-radius: 10px;
+    }
+    &::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 0;
+        height: 100%;
+        transition: all 0.3s;
+        background-color: var(--bg-color-2);
+        border-radius: 10px;
+    }
+    &:hover{
+        animation: pulse-2 1s ease 0.3s infinite;
+        &::after{
+            width: 100%;
+        }
+    }
+}
+
+
+/*---------FAVORİTE BUTTON---------*/
+.favorite-button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--bg-color-2);
+    i{
+        color: var(--t-color-3);
+        font-size: 16px;
+        animation: heart-icon 0.5s ease forwards;
+    }
+}
+
+/*----------ABOUT BUTTON----------*/
+.about-button{
+    @include center;
+    align-self: center;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid var(--d-color-1);
+    border-radius: 10px;
+    background-color: var(--bg-color-3);
+    width: 100%;
+    min-width: 150px;
+    max-width: 300px;
+    position: relative;
+    --tilt: 1.2rem;
+    span{
+        color: var(--t-color-1);
+        font-size: 20px;
+        font-weight: 600;
+        z-index: 3;
+    }
+    &::after{
+        clip-path: polygon(
+            0 0,
+            calc(100% - var(--tilt)) 0,
+            100% 50%,
+            calc(100% - var(--tilt)) 100%,
+            0 100%
+        );
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: var(--bg-color-1);
+        height: 100%;
+        width: 40px;
+        top: 0;
+        left: 0;
+        transform: scale(1);
+        border-radius: 10px 0 0 10px;
+        opacity: 0;
+    }
+    &::before{
+        clip-path: polygon(
+            0 0,
+            calc(100% - var(--tilt)) 0,
+            100% 50%,
+            calc(100% - var(--tilt)) 100%,
+            0 100%
+        );
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: var(--bg-color-1);
+        height: 100%;
+        width: 40px;
+        top: 0;
+        right: 0;
+        transform: scale(1) rotate(180deg);
+        transition: all 0.3s;
+        border-radius: 10px 0 0 10px;
+        opacity: 0;
+    }
+    &:hover{
+        border-color: #fff;
+        animation: pulse-1 1s ease 0.3s infinite;
+        span{
+            color: var(--t-color-3);
+        }
+        &::after,
+        &::before{
+            width: 70%;
+            opacity: 1;
+        }
+    }
+}
+
+
+/*--------OPEN FİLTERS BUTTON--------*/
+.open-filters-button{
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: var(--bg-color-1);
+    color: var(--t-color-3);
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    i{
+        margin-right: 10px;
+    }
+    &.active{
+        background-color: var(--bg-color-2);
+    }
+}
+
+
+/*--------PRODUCT REVİEW BUTTON--------*/
+.product-review-button{
+    background-color: #E8EDF1;
+    border: 2px solid var(--d-color-2);
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 160px;
+    color: var(--t-color-2);
+    font-size: 18px;
+    font-weight: 500;
+    &:hover{
+        background-color: var(--bg-color-2);
+        color: var(--t-color-3);
+        animation: pulse-2 1s ease infinite;
+    }
+}
+
+
+
+/*----------PRODUCT MODAL BUTTON----------*/
+.modal-button{
+    padding: 15px;
+    min-width: 200px;
+    background-color: var(--bg-color-2);
+    border: 2px solid transparent;
+    color: var(--t-color-3);
+    font-size: 20px;
+    font-weight: 600;
+    @include center;
+    border-radius: 10px;
+    margin: 15px 0;
+    &:hover{
+        color: var(--t-color-2);
+        background-color: var(--bg-color-3);
+        border-color: var(--d-color-2);
+    }
+}
+/*----------product canvas button----------*/
+.product-canvas-button{
+    background-color: var(--bg-color-1);
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--t-color-3);
+    border: 2px solid transparent;
+    @include center;
+    border-radius: 10px;
+    margin: 15px 0;
+    &:hover{
+        border-color: var(--d-color-1);
+        background-color: var(--bg-color-3);
+        color: var(--t-color-1);
+    }
+}
+
+/*-----------BUTTON GROUP-----------*/
+.btn-group{
+    margin: 20px 0;
+    a{
+        width: 35px;
+        height: 35px;
+        border: 1px solid var(--d-color-2);
+        border-radius: 5px;
+        @include center;
+        color: var(--t-color-1);
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 10px;
+        }
+        &:hover{
+            border-color: var(--d-color-1);
+            background-color: var(--bg-color-1);
+            color: var(--t-color-3);
+        }
+    }
+    a.active{
+        border-color: var(--d-color-1);
+        background-color: var(--bg-color-1);
+        color: var(--t-color-3);
+    }
+}
+@media only screen and (min-width: 768px){
+    .btn-group{
+        a{
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+        }
+    }
+}
+
+
+/*---------CONFIRM ORDER BUTTON---------*/
+.confirm-order-button{
+    padding: 20px;
+    min-width: 150px;
+    max-width: 300px;
+    background-color: var(--bg-color-1);
+    color: var(--t-color-3);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    &:hover{
+        background-color: var(--bg-color-2);
+        animation: pulse-2 1s ease infinite;
+    }
+}
+
+
+/*----------FORM SUBMIT BUTTON----------*/
+.form-submit-button{
+    width: 100%;
+    max-width: 300px;
+    min-width: 150px;
+    position: relative;
+    padding: 15px;
+    color: var(--t-color-3);
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--bg-color-1);
+    margin: 10px 0;
+    border-radius: 10px;
+    &::after{
+        content: "";
+        position: absolute;
+        border: 3px solid var(--d-color-1);
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        transform: scale(1.2);
+        transition: all 0.3s;
+    }
+    &:hover{
+        background-color: var(--bg-color-3);
+        color: var(--t-color-1);
+        &::after{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+
+
+/*-----------ACCORDION BUTTON-----------*/
+.accordion-button{
+    @include s-between;
+    &::after{
+        display: none;
+    }
+    .button-name{
+        @include column-start;
+        
+    }
+    .main-chevron{
+        font-size: 22px;
+        color: var(--t-color-1);
+    }
+    &:focus{
+        box-shadow: none;
+    }
+    &:not(.collapsed) {
+        box-shadow: none; 
+        background-color: var(--bg-color-1);
+        .main-chevron{
+            color: var(--t-color-3);
+        }
+    }
+}
+
+/*------------VACANCY BUTTON------------*/
+.vacancy-button{
+    background-color: var(--bg-color-1);
+    color: var(--t-color-3);
+    font-weight: 500;
+    font-size: 20px;
+    padding: 15px;
+    margin: 15px 0;
+    min-width: 180px;
+    width: 100%;
+    max-width: 300px;
+    @include center;
+    border-radius: 10px;
+    &:hover{
+        background-color: var(--bg-color-2);
+        color: var(--t-color-3);
+        animation: pulse-2 1s ease infinite;
+    }
+}

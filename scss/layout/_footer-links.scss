@@ -1,0 +1,133 @@
+/*-----------FOOTER LINKS PAGES-----------*/
+
+/*-------------VIONA SUGGESTIONS PAGE-------------*/
+.suggestion-section,
+.vacancy-form-section{
+    margin-bottom: 70px;
+    .col-12{padding: 0;}
+    .col-12.col-md-6{
+        padding: 0;
+    }
+    textarea.form-control{
+        min-height: 165px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .suggestion-section,
+    .vacancy-form-section{
+        .col-12.col-md-6{
+            padding-left: 15px;
+            &:nth-child(2n+1){
+                padding-left: 0;
+                padding-right: 15px;
+            }
+        }
+    }
+}
+
+/*----------VIONA VACANCY PAGE----------*/
+.vacancy-section{
+    margin-bottom: 50px;
+}
+#vacancy-accordion{
+    width: 100%;
+    .accordion-button{
+        .header{
+            font-weight: 600;
+            font-size: 18px;
+            padding: 10px 0;
+        }
+        .icons{
+            @include column-start;
+            .icon-item{
+                margin-bottom: 10px;
+                i{
+                    color: var(--t-color-1);
+                    margin-right: 10px;
+                }
+                span{
+                    font-weight: 500;
+                }
+            }
+        }
+        &:focus{
+            .header{
+                color: var(--t-color-4);
+            }
+            .icon-item{
+                span{
+                    color: var(--t-color-4);
+                }
+            }
+        }
+        &:not(.collapsed) {
+            .header{
+                color: var(--t-color-3);
+            }
+            .icons{
+                .icon-item{
+                    i{
+                        color: var(--t-color-3);
+                    }
+                    span{
+                        color: var(--t-color-3);
+                    }
+                }
+            }
+            .main-chevron{
+                color: var(--t-color-3);
+            }
+        }
+    }
+    .vacancy-wrapper{
+        @include column-start;
+        padding: 25px 20px;
+        max-width: 900px;
+        .header{
+            font-weight: 600;
+        }
+        .skills-wrapper{
+            @include column-start;
+            padding: 10px 15px;
+            ul{
+                li{
+                    list-style: "-  ";
+                }
+            }
+        }
+        .vacancy-table{
+            margin: 10px 0;
+            td:first-child{
+                padding-right: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+/*-------------VİONA FAQ PAGE-------------*/
+.faq-section{
+    margin-bottom: 50px;
+}
+#faq-accordion{
+    width: 100%;
+    margin-top: 30px;
+    .accordion-button{
+        .header{
+            font-weight: 600;
+        }
+        &:focus{
+            .header{
+                color: var(--t-color-4);
+            }
+        }
+        &:not(.collapsed){
+            .header{
+                color: var(--t-color-3);
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,87 @@
+/*--------------VIONA ABOUT PAGE--------------*/
+.about-section{
+    .row{
+        width: 100%;
+        .col-12.col-lg-6{
+            padding: 0;
+        }
+        .about-main-images{
+            width: 100%;
+            position: relative;
+            .large-img{
+                width: 100%;
+                max-width: 580px;
+                max-height: 380px;
+                //object-fit: contain;
+                padding-right: 40px;
+                padding-bottom: 20px;
+            }
+            .small-img{
+                width: 55%;
+                max-width: 320px;
+                max-height: 240px;
+                object-fit: contain;
+                position: absolute;
+                bottom: 0;
+                right: 0;   
+            }
+        }
+        .about-text{
+            padding: 60px 0;
+            text-align: center;
+        }
+        .about-design-wrapper{
+            width: 100%;
+            position: relative;
+            @include row-start;
+            .design-bg{
+                background-color: var(--bg-color-1);
+                border-radius: 10px;
+                width: 100%;
+                max-width: 560px;
+                @include center;
+                
+                .logo{
+                    width: 100%;
+                    max-width: 320px;
+                    max-height: 360px;
+                    object-fit: contain;
+                }
+            }
+            .hover-div{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                @include column-center;
+                .image, .label{
+                    width: 100%;
+                    @include center;
+                }
+                img{
+                    width: 90%;
+                    max-width: 440px;
+                    max-height: 190px;
+                    object-fit: contain;
+                }
+                span{
+                    font-weight: 600;
+                    font-size: 22px;
+                    color: var(--t-color-3);
+                    padding: 15px;
+                    text-align: center;
+                }
+            }
+        }
+        .second-row{
+            width: 100%;
+        }
+        .about-design-wrapper.secondary{
+            justify-content: flex-end;
+            .design-bg{
+                background-color: var(--bg-color-2);
+            }
+        }
+    }
+}

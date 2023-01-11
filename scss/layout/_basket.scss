@@ -1,0 +1,246 @@
+/*--------------VİONA BASKET EDİT PAGE--------------*/
+.basket-table-wrapper{
+    width: 100%;
+    @include column-start;
+    margin: 10px 0 20px;
+    overflow: auto;
+    .basket-table{
+        width: 100%;
+        min-width: 1000px;
+        tr{
+            border-bottom: 1px solid var(--black-1)
+        }
+        th{
+            color: var(--black-5);
+            text-align: center;
+            padding: 10px;
+        }
+        td{
+            text-align: center;
+            padding: 10px;
+            min-height: 150px;
+        }
+        .image-cell{
+            max-width: 250px;
+        }
+        .product-image{
+            width: 220px;
+            height: 120px;
+            min-height: 130px;
+            margin: auto;
+            img{
+                width: 200px;
+                max-width: 200px;
+                height: 120px;
+                min-height: 120px;
+                object-fit: contain;
+            }
+        }
+        .table-item{
+            width: 100%;
+            @include center;
+        }
+        .table-item.info{
+            @include column-start;
+        }
+        .product-size{
+            span{
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+        .color-div{
+            @include center;
+            width: 30px;
+            height: 30px;
+            border: 1px solid var(--black-5);
+            border-radius: 50%;
+            span{
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
+        }
+        .product-initial-price,
+        .product-final-price{
+            @include center;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            min-width: 100px;
+        }
+        .product-amount{
+            min-width: 160px;
+            max-width: 200px;
+        }
+        .product-delete-button{
+            padding: 0 15px;
+        }
+    }
+}
+.basket-edit-confirm-wrapper{
+    width: 100%;
+    @include column-end;
+    .confirm-order-button{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+/*-------PRICES WRAPPER-------*/
+.prices-wrapper{
+    @include column-center;
+    padding: 10px 0;
+    .item{
+        width: 100%;
+        @include s-between;
+        margin-bottom: 10px;
+        .label{
+            margin-right: 30px;
+        }
+        &.last .label,
+        &.last .price{
+            font-weight: 600;
+        }
+    }
+}
+
+/*-------------VIONA BASKET PAGE-------------*/
+.basket-form{
+    .row{
+        width: 100%;
+    }
+    .col-12.col-lg-6{
+        padding: 0;
+    }
+    .delivery-terms-link{
+        font-size: 20px;
+        text-decoration: underline;
+        font-weight: 600;
+        color: #000;
+        padding: 15px 0;
+        display: inline-block;
+        margin-bottom: 25px;
+        &:hover{
+            color: var(--t-color-2);
+        }
+    }
+    .payment-card-info{
+        @include column-center;
+        .header{
+            font-size: 20px;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 20px;
+            align-self: flex-start;
+        }
+        .payment-cards{
+            width: 100%;
+            @include row-start;
+            margin-bottom: 20px;
+            .card:first-child{
+                margin-right: 10px;
+            }
+        }
+        label span{
+            color: #C90C0C;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .form-control{
+            background-color: #fff;
+            border: 1px solid var(--black-2);
+            color: #000;
+            &::placeholder{
+                color: var(--black-2);
+            }
+        }
+    }
+    .basket-edit-data-wrapper{
+        width: 100%;
+        @include column-center;
+        padding: 0 10px;
+        margin-top: 15px;
+        
+        .header{
+            width: 100%;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--black-2);
+            @include s-between;
+            span{
+                font-size: 22px;
+                font-weight: 600;
+            }
+            a{
+                color: var(--t-color-1);
+                font-size: 18px;
+                font-weight: 600;
+                &:hover{
+                    color: var(--t-color-2);
+                }
+            }
+        }
+        .basket-products{
+            width: 100%;
+            @include column-start;
+            overflow-x: auto;
+            margin-bottom: 20px;
+            .row{
+                width: 100%;
+                min-width: 500px;
+                min-height: 140px;
+                margin: 0;
+                border-bottom: 1px solid var(--black-2);
+                .product-info{
+                    @include column-center;
+                    padding-left: 10px;
+                    
+                }
+                .price{
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: var(--t-color-5);
+                }
+            }
+        }
+        .product-image{
+            width: 100px;
+            height: 100px;
+            img{
+                width: 100px;
+                height: 100px;
+                min-height: 100px;
+                object-fit: contain;
+            }
+        }
+        .prices-wrapper{
+            width: 100%;
+        }
+        .confirm-order-button{
+            width: 100%;
+            margin: 20px 0;
+            max-width: 100%;
+        }
+        
+    }
+}
+
+/*------------FORM BUTTONS ROW------------*/
+.form-buttons-row{
+    width: 100%;
+    @include column-center;
+    background-color: var(--bg-color-1);
+    padding: 5px 12px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    button{
+        width: 100%;
+        border-radius: 10px;
+        color: var(--t-color-3);
+        font-weight: 600;
+        padding: 15px;
+        &.active{
+            background-color: var(--bg-color-2);
+        }
+    }
+}

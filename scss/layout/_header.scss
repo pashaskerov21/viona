@@ -1,0 +1,88 @@
+/*--------------HEADER--------------*/
+
+header{
+    .top-navbar{
+        width: 100%;
+        background-color: var(--bg-color-3);
+        
+        .col-2, .col-10{padding: 0;}
+        .container{
+            @include center;
+            .row{
+                width: 100%;
+                padding: 12px 0;
+                border-bottom: 1px solid var(--black-1);
+                
+            }
+            
+        }
+    }
+    .mobile-header{
+        width: 100%;
+        background-color: var(--bg-color-3);
+        .col-4, .col-8{
+            padding: 0;
+        }
+        .container{
+            @include center;
+            .row{
+                width: 100%;
+                padding: 15px 0;
+            }
+        }
+    }
+    .general-header{
+        width: 100%;
+        background-color: var(--bg-color-3);
+        .col-3, .col-6{padding: 0}
+        .container{
+            @include column-center;
+            .row{
+                width: 100%;
+                padding: 10px 0;
+            }
+        }
+    }
+    .fixed-header{
+        padding: 10px 0;
+        background-color: var(--bg-color-3);
+        box-shadow: 0 0 5px var(--black-6);
+        animation: fix-header 0.5s ease forwards;
+        .col-4, .col-8{padding: 0;}
+        .container{
+            @include center;
+            .row{
+                width: 100%;
+            }
+        }
+    }
+    #header-offcanvas{
+        .offcanvas-header{
+            .row{
+                width: 100%;
+                padding: 10px 0;
+            }
+        }
+    }
+    #search-offcanvas{
+        max-height: 200px;
+        .col-2, .col-10{padding: 0;}
+        .container{
+            width: 100%;
+            height: 100%;
+            @include center;
+            padding: 15px;
+            .row{
+                width: 100%;
+                input::placeholder{
+                    color: var(--t-color-1);
+                    font-weight: 700;
+                }
+            }
+            form{
+                width: 100%;
+                position: relative;
+            }
+        }
+    }
+}

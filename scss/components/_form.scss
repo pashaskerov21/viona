@@ -1,0 +1,123 @@
+/*================FORM ELEMENTS================*/
+
+/*-------FORM GENERAL-------*/
+.form-general{
+    width: 100%;
+    @include column-center;
+    .form-item{
+        width: 100%;
+        @include column-start;
+        margin-bottom: 25px;
+    }
+    label{
+        padding: 5px 8px;
+    }
+    .form-control{
+        width: 100%;
+    }
+}
+.form-general.login-form{
+    margin-bottom: 25px;
+    max-width: 700px;
+}
+/*--------FORM CONTROL--------*/
+.form-control{
+    background-color: var(--bg-color-7);
+    border: none;
+    box-shadow: none;
+    caret-color: var(--d-color-1);
+    color: var(--t-color-1);
+    font-weight: 500;
+    padding: 15px;
+    &:focus{
+        background-color: var(--bg-color-7);
+        border: none;
+        box-shadow: none;
+        color: var(--t-color-1);
+        font-weight: 500;
+    }
+}
+/*-----------CHECKBOXS-----------*/
+.form-check{
+    margin-bottom: 10px;
+    
+    &-input{
+        border-color: var(--black-3);
+        &:focus{
+            border-color: var(--black-3);
+            outline: 0;
+            box-shadow: none;
+        }
+        &:checked{
+            background-color: var(--d-color-2);
+            border-color: var(--d-color-2);
+        }
+    }
+    label:hover{
+        color: var(--t-color-2);
+        cursor: pointer;
+    }
+    &.secondary{
+        width: 100%;
+        @include row-start;
+        padding: 0;
+        .form-check-input{
+            min-width: 22px;
+            min-height: 22px;
+            margin: 0;
+            margin-right: 12px;
+        }
+        span{
+            font-weight: 600;
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+            a{
+                color: #000;
+                text-decoration: underline;
+                &:hover{
+                    color: var(--t-color-2);
+                }
+            }
+        }
+    }
+}
+
+/*-------FILE INPUT-------*/
+.file-input{
+    width: 100%;
+    input{
+        display: none;
+    }
+    label{
+        width: 100%;
+        padding: 20px;
+        background-color: var(--bg-color-7);
+        @include column-center;
+        cursor: pointer;
+        border-radius: 5px;
+        i{
+            color: var(--t-color-1);
+            font-size: 35px;
+            padding: 10px 0;
+        }
+    }
+}
+
+/*------TEXTAREA------*/
+textarea.form-control{
+    resize: none;
+    min-height: 100px;
+}
+.muraciet-form-section{
+    margin-bottom: 70px;
+    textarea.form-control{
+        min-height: 165px;
+    }
+}
+.suggestions-section{
+    margin-bottom: 70px;
+    textarea.form-control{
+        min-height: 180px;
+    }
+}
