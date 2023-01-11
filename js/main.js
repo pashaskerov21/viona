@@ -224,7 +224,22 @@ if((document.querySelector(".favorite-button")) && document.querySelector(".amou
         })(i);
     }
 }
+if(document.querySelector(".favori-products-section")){
+    let productCardCol = document.querySelectorAll(".favori-products-section .col-12.col-sm-6.col-lg-4.col-xl-3");
+    let favoriteButton = document.querySelectorAll(".favori-products-section .product-card .favorite-button");
+    let favoriteAmountSpan = document.querySelectorAll(".amount-badge.favori");
 
+    favoriteAmountSpan[0].innerHTML = productCardCol.length;
+    favoriteAmountSpan[1].innerHTML = productCardCol.length;
+
+    for(let i = 0; i < favoriteButton.length; i++){
+        (function(index){
+            favoriteButton[i].addEventListener("click",function(){
+                productCardCol[index].remove();
+            })
+        })(i);
+    }
+}
 
 /*----------MOBILE FILTER BUTTON----------*/
 if(document.querySelector(".open-filters-button")){

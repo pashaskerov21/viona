@@ -191,6 +191,13 @@
                     height: 140px;
                 }
             }
+            .product-thumb-swiper{
+                img{
+                    width: 50px;
+                    height: 45px;
+                    object-fit: contain;
+                }
+            }
         }
     }
 }
