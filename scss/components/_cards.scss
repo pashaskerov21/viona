@@ -180,46 +180,10 @@
     .product-card{
         max-width: 220px;
         margin-bottom: 15px;
-        .product-image{
-            img{
-                max-width: 190px;
-                height: 140px;
-            }
-            .product-top-swiper{
-                img{
-                    max-width: 190px;
-                    height: 140px;
-                }
-            }
-            .product-thumb-swiper{
-                img{
-                    width: 50px;
-                    height: 45px;
-                    object-fit: contain;
-                }
-            }
-        }
+        
     }
 }
-@media only screen and (min-width: 576px){
-    .products-row{
-        .product-card{
-            max-width: 250px;
-            .product-image{
-                img{
-                    max-width: 220px;
-                    height: 160px;
-                }
-                .product-top-swiper{
-                    img{
-                        max-width: 220px;
-                        height: 160px;
-                    }
-                }
-            }
-        }
-    }
-}
+
 
 /*---------ROOM-CATEGORY-CARD---------*/
 .room-category-card{

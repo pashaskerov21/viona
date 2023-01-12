@@ -93,21 +93,22 @@
     position: relative;
     img{
         width: 100%;
-        max-width: 150px;
+        //max-width: 150px;
         height: 100px;
         object-fit: contain;
     }
     .product-top-swiper{
         img{
             width: 100%;
-            max-width: 150px;
+            //max-width: 150px;
             height: 100px;
             object-fit: contain;
         }
     }
     .product-thumb-swiper{
         img{
-            width: 45px;
+            //width: 45px;
+            width: 100%;
             height: 40px;
             object-fit: contain;
         }

@@ -446,8 +446,9 @@ if(document.querySelector(".basket-table")){
 
 }
 
-/*-------CONTACT PAGE-------*/
 
+
+/*-------CONTACT PAGE-------*/
 if(document.querySelector(".filial-collapse-button")){
     let filialCollapseButton = document.querySelector(".filial-collapse-button");
     filialCollapseButton.addEventListener("click",function(){

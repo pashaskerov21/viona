@@ -21,15 +21,12 @@ const productSwiper = new Swiper(".products-swiper", {
       prevEl: '.swiper-button-prev',
     },
     slidesPerView: 1.4,
-    //spaceBetween: 10,
-     breakpoints: {
+    breakpoints: {
       350: {slidesPerView: 1.5},
-      400: {slidesPerView: 1.7},
       576: {slidesPerView: 2},
-      650: {slidesPerView: 2.5},
-      768: {slidesPerView: 3},
-      850: {slidesPerView: 3.5},
-      992: {slidesPerView: 4},    
+      768: {slidesPerView: 2.5},
+      992: {slidesPerView: 3},   
+      1200: {slidesPerView: 4},   
     },
 });
 
