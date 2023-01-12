@@ -72,10 +72,7 @@
     cursor: pointer;
     .header{
         width: 100%;
-        @include column-center;
-        .favorite-button{
-            align-self: flex-end;
-        }
+        @include row-end;
     }
     .header-2{
         width: 100%;
@@ -178,7 +175,7 @@
         align-items: flex-start;
     }
     .product-card{
-        max-width: 220px;
+        max-width: 250px;
         margin-bottom: 15px;
         
     }
