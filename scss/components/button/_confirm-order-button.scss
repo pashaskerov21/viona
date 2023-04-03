@@ -1,0 +1,20 @@
+/*---------CONFIRM ORDER BUTTON---------*/
+.confirm-order-button{
+    padding: 20px;
+    min-width: 150px;
+    max-width: 300px;
+    background-color: var(--bg-color-1);
+    color: var(--t-color-3);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    @include center;
+    a{
+        color: var(--t-color-3);
+    }
+    &:hover{
+        background-color: var(--bg-color-2);
+        animation: pulse-2 1s ease infinite;
+        color: var(--t-color-3);
+    }
+}

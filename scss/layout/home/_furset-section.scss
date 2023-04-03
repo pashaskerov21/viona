@@ -1,0 +1,35 @@
+/*----------FURSET SECTION----------*/
+.furset-section{
+    .row{
+        width: 100%;
+        .col-12{
+            padding: 0;
+        }
+        .banner-image{
+            width: 100%;
+            align-self: stretch;
+            margin-bottom: 30px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .furset-section{
+        .row{
+            .col-12{
+                &:first-child{padding-right: 7px;}
+                &:last-child{padding-left: 7px;}
+            }
+            .banner-image{
+                margin-bottom: 0;
+                img{
+                    max-height: 460px;
+                }
+            }
+        }
+    }
+}

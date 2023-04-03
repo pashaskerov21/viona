@@ -1,0 +1,10 @@
+/*----------PRODUCT NAME----------*/
+.product-name{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--t-color-6);
+    display: block;
+    &:hover{
+        color: var(--t-color-1);
+    }
+}

@@ -1,0 +1,19 @@
+/*----------TOP NAV LANGUAGE----------*/
+.top-nav-language{
+    padding: 0 15px;
+    border-left: 1px solid var(--black-1);
+    @include center;
+    a{
+        text-decoration: underline;
+        font-size: var(--fs-md);
+        color: var(--t-color-1);
+        font-weight: bold;
+        margin-right: 15px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    a.active{
+        color: var(--t-color-2);
+    }
+}

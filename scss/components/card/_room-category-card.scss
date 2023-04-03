@@ -1,0 +1,31 @@
+/*---------ROOM-CATEGORY-CARD---------*/
+.room-category-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 270px;
+    padding: 10px;
+    img{
+        width: 100%;
+        max-width: 200px;
+        height: 100px;
+        object-fit: contain;
+        transform: translateY(15px);
+    }
+    .button{
+        width: 100%;
+        min-width: 220px;
+        max-width: 250px;
+        padding: 15px;
+        border-radius: 10px;
+        color: var(--t-color-3);
+        font-size: var(--fs-xl);
+        font-weight: 600;
+        @include center;
+        background-color: var(--bg-color-2);
+    }
+    &:hover img{
+        transform: scale(1.05);
+    }
+}

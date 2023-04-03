@@ -1,0 +1,23 @@
+header{
+    #search-offcanvas{
+        max-height: 200px;
+        .col-2, .col-10{padding: 0;}
+        .container{
+            width: 100%;
+            height: 100%;
+            @include center;
+            padding: 15px;
+            .row{
+                width: 100%;
+                input::placeholder{
+                    color: var(--t-color-1);
+                    font-weight: 700;
+                }
+            }
+            form{
+                width: 100%;
+                position: relative;
+            }
+        }
+    }
+}

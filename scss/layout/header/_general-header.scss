@@ -1,0 +1,14 @@
+header{
+    .general-header{
+        width: 100%;
+        background-color: var(--bg-color-3);
+        .col-3, .col-6{padding: 0}
+        .container{
+            @include column-center;
+            .row{
+                width: 100%;
+                padding: 10px 0;
+            }
+        }
+    }
+}

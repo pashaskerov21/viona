@@ -1,0 +1,17 @@
+/*------TEXTAREA------*/
+textarea.form-control{
+    resize: none;
+    min-height: 100px;
+}
+.muraciet-form-section{
+    margin-bottom: 70px;
+    textarea.form-control{
+        min-height: 165px;
+    }
+}
+.suggestions-section{
+    margin-bottom: 70px;
+    textarea.form-control{
+        min-height: 180px;
+    }
+}

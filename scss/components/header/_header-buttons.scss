@@ -1,0 +1,19 @@
+/*--------MENU SEARCH LOGIN BUTTONS--------*/
+.menu-button,
+.search-button,
+.login-button{
+    font-size: 20px;
+    color: var(--t-color-1);
+    &:hover{
+        color: var(--t-color-2);
+    }
+}
+
+@media only screen and (min-width: 380px){
+    .menu-button,
+    .search-button,
+    .login-button{
+        font-size: 26px;
+        color: var(--t-color-1);
+    }
+}

@@ -1,0 +1,21 @@
+/*-----------SOSIAL ICONS-----------*/
+.sosial-icons{
+    @include center;
+    a{
+        font-size: var(--fs-md);
+        @include center;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        margin-right: 5px;
+        color: var(--t-color-1);
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            background-color: var(--bg-color-1);
+            animation: pulse-1 1s 0.3s ease infinite;
+            color: var(--t-color-3);
+        }
+    }
+}

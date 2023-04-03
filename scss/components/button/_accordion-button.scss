@@ -1,0 +1,25 @@
+/*-----------accordion button-----------*/
+.accordion-button{
+    @include s-between;
+    &::after{
+        display: none;
+    }
+    .button-name{
+        @include column-start;
+        
+    }
+    .main-chevron{
+        font-size: 22px;
+        color: var(--t-color-1);
+    }
+    &:focus{
+        box-shadow: none;
+    }
+    &:not(.collapsed) {
+        box-shadow: none; 
+        background-color: var(--bg-color-1);
+        .main-chevron{
+            color: var(--t-color-3);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+/*--------------HEADER--------------*/
+header{
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    .fixed-top{
+        padding: 10px 0;
+        background-color: var(--bg-color-3);
+        box-shadow: 0 0 5px var(--black-6);
+        animation: fix-header 0.5s ease forwards;
+    }
+}

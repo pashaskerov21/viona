@@ -1,0 +1,20 @@
+/*-------FILE INPUT-------*/
+.file-input{
+    width: 100%;
+    input{
+        display: none;
+    }
+    label{
+        width: 100%;
+        padding: 20px;
+        background-color: var(--bg-color-7);
+        @include column-center;
+        cursor: pointer;
+        border-radius: 5px;
+        i{
+            color: var(--t-color-1);
+            font-size: 35px;
+            padding: 10px 0;
+        }
+    }
+}

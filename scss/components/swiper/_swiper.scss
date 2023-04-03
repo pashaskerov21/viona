@@ -1,0 +1,12 @@
+/*================SWIPER==================*/
+.swiper{
+    width: 100%;
+    z-index: 1;
+    .swiper-wrapper{
+        z-index: 1;
+    }
+    .swiper-slide{
+        z-index: 1;
+        @include center;
+    }
+}

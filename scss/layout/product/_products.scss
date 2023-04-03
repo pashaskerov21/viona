@@ -1,0 +1,75 @@
+/*----------VIONA PRODUCTS PAGE----------*/
+.products-section{
+    .general-row{
+        width: 100%;
+        padding: 50px 0;
+        .left-wrapper{
+            width: 100%;
+            @include column-center;
+        }
+        .type-filter-form{
+            width: 100%;
+            @include column-center;
+            .filter-item{
+                width: 100%;
+            }
+            .filter-collapse-button{
+                margin-bottom: 15px;
+            }
+            .filter-collapse{
+                width: 100%;
+                border: 1px solid #EFEFEF;
+                border-top: none;
+                border-radius: 0 0 5px 5px;
+                transform: translateY(-20px);
+                width: 100%;
+                padding: 15px;
+                padding-top: 25px;
+                .checkbox-wrapper{
+                    width: 100%;
+                    @include row-start;
+                    flex-wrap: wrap;
+                    .form-check{
+                        padding-right: 25px;
+                    }
+                }
+            }
+
+            .buttons{
+                @include column-center;
+                width: 100%;
+                button{
+                    width: 100%;
+                    padding: 15px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    border-radius: 10px;
+                    &:first-child{
+                        margin-bottom: 10px;
+                    }
+                }
+                .confirm-button{
+                    background-color: var(--bg-color-1);
+                    color: var(--t-color-3);
+                    &:hover{
+                        background-color: var(--bg-color-2);
+                    }
+                }
+                .reset-button{
+                    border: 1px solid var(--d-color-5);
+                    color: var(--t-color-5);
+                    &:hover{
+                        background-color: var(--bg-color-5);
+                        color: var(--t-color-3);
+                        animation: reset-button 0.1s ease 5;
+                    }
+                }
+            }
+            
+        }
+        .right-wrapper{
+            width: 100%;
+            @include column-center;
+        }
+    }
+}

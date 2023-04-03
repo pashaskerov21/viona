@@ -1,0 +1,24 @@
+/*-----------FURSET CARD SWIPER------------*/
+.furset-card-swiper{
+    .swiper-button-prev,
+    .swiper-button-next{
+        background-color: var(--bg-color-1);
+    }
+    .swiper-button-prev{
+        left: 0;
+    }
+    .swiper-button-next{
+        right: 0;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .furset-card-swiper.large{
+        
+        .swiper-button-prev{
+            left: 10px;
+        }
+        .swiper-button-next{
+            right: 10px;
+        }
+    }
+}

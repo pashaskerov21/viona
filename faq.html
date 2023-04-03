@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viona</title>
+    <link rel="icon" href="image/logo/viona/viona-icon.png">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+    <!------------PAGE TOOLS------------>
+    <button class="page-scroll-button d-none"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="web-toolbar d-none">
+        <div class="button">
+            <div class="icon furset">
+                <img src="image/icon/furset-icon.png">
+            </div>
+            <a href="fursetler.html" class="label">Fürsətlər</a>
+        </div>
+        <div class="button">
+            <div class="icon">
+                <img src="image/icon/basket-icon-2.png">
+                <span class="amount-badge basket">0</span>
+            </div>
+            <a href="basket-edit.html" class="label">Səbət</a>
+        </div>
+        <div class="button">
+            <div class="icon">
+                <img src="image/icon/heart-icon.png">
+                <span class="amount-badge favori">0</span>
+            </div>
+            <a href="favori-products.html" class="label">Favori</a>
+        </div>
+    </div>
+
+    <!--HEADER-->
+    <header>
+        <!--TOP NAVBAR-->
+        <nav class="top-navbar d-none d-sm-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-start">
+                        <a href="#" class="phone-link-2">*1001</a>
+                    </div>
+                    <div class="col-6 col-end">
+                        <div class="sosial-icons px-lg-2">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <div class="top-nav-language d-none d-lg-flex">
+                            <a href="#" class="active">Az</a>
+                            <a href="#">En</a>
+                            <a href="#">Ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--MOBILE NAVBAR-->
+        <nav class="mobile-header d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-start">
+                        <a href="index.html" class="header-logo"><img src="image/logo/viona/viona-logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-6 col-end">
+                        <a href="login.html" class="login-button m-right"><i class="fa-regular fa-circle-user"></i></a>
+                        <button class="search-button m-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#search-offcanvas">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <div class="dropdown language-dropdown m-right">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <a href="#">Az</a>
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="links">
+                                    <a href="#">En</a>
+                                    <a href="#">Ru</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#header-offcanvas">
+                            <i class="fa-sharp fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--MOBILE MENU-->
+        <div class="offcanvas offcanvas-start" id="header-offcanvas">
+            <div class="offcanvas-header">
+                <a href="index.html" class="header-logo"><img src="image/logo/viona/viona-logo.png" alt="logo"></a>
+                <button class="close-button" data-bs-dismiss="offcanvas">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="categories-wrapper secondary">
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/category-icon/viona/qonaq-icon.png">
+                        </div>
+                        <span>Qonaq otağı</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/category-icon/viona/yataq-icon.png">
+                        </div>
+                        <span>Yataq otağı</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/category-icon/viona/usaq-icon.png">
+                        </div>
+                        <span>Uşaq otağı</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/category-icon/viona/metbex-icon.png">
+                        </div>
+                        <span>Mətbəx</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/category-icon/viona/stol-icon.png">
+                        </div>
+                        <span>Stol-stul</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/category-icon/viona/yumsaq-icon.png">
+                        </div>
+                        <span>Yumşaq mebel</span>
+                    </a>
+                </div>
+                
+                <div class="canvas-links">
+                    <a href="about.html">Haqqımızda</a>
+                    <a href="products.html">Məhsullar</a>
+                    <a href="shops.html">Mağazalarımız</a>
+                    <a href="contact.html">Əlaqə</a>
+                </div>
+                <div class="sosial-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="canvas-phone">
+                    <a href="#"><i class="fa-solid fa-phone"></i> *1001</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i> 055 255 67 89</a>
+                </div>
+            </div>
+        </div>
+        <!--PAGE SEARCH-->
+        <div class="offcanvas offcanvas-top" id="search-offcanvas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-center">
+                        <div class="search-input">
+                            <form action="#">
+                                <input type="text" class="form-control" placeholder="Axtar">
+                                <button><img src="image/icon/search-icon.png"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-2 col-end">
+                        <button class="close-button" data-bs-dismiss="offcanvas">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--GENERAL HEADER-->
+        <nav class="general-header d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-start">
+                        <a href="index.html" class="header-logo"><img src="image/logo/viona/viona-logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-6 col-center">
+                        <div class="search-input">
+                            <form action="#">
+                                <input type="text" class="form-control">
+                                <button><img src="image/icon/search-icon.png"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-3 col-end">
+                        <div class="general-icons">
+                            <a href="fursetler.html" class="item furset">
+                                <div class="icon">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <span>Fürsətlər</span>
+                            </a>
+                            <a href="login.html" class="item">
+                                <div class="icon">
+                                    <i class="fa-regular fa-circle-user"></i>
+                                </div>
+                                <span>Giriş</span>
+                            </a>
+                            <a href="basket-edit.html" class="item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>Səbət</span>
+                            </a>
+                            <a href="favori-products.html" class="item">
+                                <div class="icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <span>Favori</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories-wrapper">
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/category-icon/viona/qonaq-icon.png">
+                        </div>
+                        <span>Qonaq otağı</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/category-icon/viona/yataq-icon.png">
+                        </div>
+                        <span>Yataq otağı</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/category-icon/viona/usaq-icon.png">
+                        </div>
+                        <span>Uşaq otağı</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/category-icon/viona/metbex-icon.png">
+                        </div>
+                        <span>Mətbəx</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/category-icon/viona/stol-icon.png">
+                        </div>
+                        <span>Stol-stul</span>
+                    </a>
+                    <a href="products.html" class="category-link">
+                        <div class="icon">
+                            <img src="image/category-icon/viona/yumsaq-icon.png">
+                        </div>
+                        <span>Yumşaq mebel</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!--BANNER SWIPER-->
+        <section class="banner-swiper-section">
+            <div class="swiper home-banner-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="image/banner-swiper/banner.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FAQ SECTION-->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="main-span">Tez-tez soruşulan suallar</span>
+                    <span class="shadow-span"></span>
+                </div>
+                <div class="accordion" id="faq-accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-1">
+                                <span class="header">The Standart Lorem ipsum passage</span>
+                                <i class="fa-solid fa-chevron-down main-chevron"></i>
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="faq-collapse-1" data-bs-parent="#faq-accordion">
+                            <div class="accordion-body">
+                                <div class="text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Iure obcaecati dolorum aut minima qui enim facilis omnis 
+                                        officiis quibusdam culpa repellat debitis incidunt, voluptate 
+                                        a non temporibus deleniti odit aperiam dolor provident. Sapiente 
+                                        rerum veritatis facilis minus provident? Aliquid tempore dolores culpa quos 
+                                        autem! Ab quisquam assumenda nulla dolorem reiciendis.Aliquid tempore dolores 
+                                        culpa quos autem! Ab quisquam assumenda nulla dolorem reiciendis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-2">
+                                <span class="header">The Standart Lorem ipsum passage</span>
+                                <i class="fa-solid fa-chevron-down main-chevron"></i>
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="faq-collapse-2" data-bs-parent="#faq-accordion">
+                            <div class="accordion-body">
+                                <div class="text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Iure obcaecati dolorum aut minima qui enim facilis omnis 
+                                        officiis quibusdam culpa repellat debitis incidunt, voluptate 
+                                        a non temporibus deleniti odit aperiam dolor provident. Sapiente 
+                                        rerum veritatis facilis minus provident? Aliquid tempore dolores culpa quos 
+                                        autem! Ab quisquam assumenda nulla dolorem reiciendis.Aliquid tempore dolores 
+                                        culpa quos autem! Ab quisquam assumenda nulla dolorem reiciendis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-3">
+                                <span class="header">The Standart Lorem ipsum passage</span>
+                                <i class="fa-solid fa-chevron-down main-chevron"></i>
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="faq-collapse-3" data-bs-parent="#faq-accordion">
+                            <div class="accordion-body">
+                                <div class="text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Iure obcaecati dolorum aut minima qui enim facilis omnis 
+                                        officiis quibusdam culpa repellat debitis incidunt, voluptate 
+                                        a non temporibus deleniti odit aperiam dolor provident. Sapiente 
+                                        rerum veritatis facilis minus provident? Aliquid tempore dolores culpa quos 
+                                        autem! Ab quisquam assumenda nulla dolorem reiciendis.Aliquid tempore dolores 
+                                        culpa quos autem! Ab quisquam assumenda nulla dolorem reiciendis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-4">
+                                <span class="header">The Standart Lorem ipsum passage</span>
+                                <i class="fa-solid fa-chevron-down main-chevron"></i>
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="faq-collapse-4" data-bs-parent="#faq-accordion">
+                            <div class="accordion-body">
+                                <div class="text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Iure obcaecati dolorum aut minima qui enim facilis omnis 
+                                        officiis quibusdam culpa repellat debitis incidunt, voluptate 
+                                        a non temporibus deleniti odit aperiam dolor provident. Sapiente 
+                                        rerum veritatis facilis minus provident? Aliquid tempore dolores culpa quos 
+                                        autem! Ab quisquam assumenda nulla dolorem reiciendis.Aliquid tempore dolores 
+                                        culpa quos autem! Ab quisquam assumenda nulla dolorem reiciendis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-5">
+                                <span class="header">The Standart Lorem ipsum passage</span>
+                                <i class="fa-solid fa-chevron-down main-chevron"></i>
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="faq-collapse-5" data-bs-parent="#faq-accordion">
+                            <div class="accordion-body">
+                                <div class="text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Iure obcaecati dolorum aut minima qui enim facilis omnis 
+                                        officiis quibusdam culpa repellat debitis incidunt, voluptate 
+                                        a non temporibus deleniti odit aperiam dolor provident. Sapiente 
+                                        rerum veritatis facilis minus provident? Aliquid tempore dolores culpa quos 
+                                        autem! Ab quisquam assumenda nulla dolorem reiciendis.Aliquid tempore dolores 
+                                        culpa quos autem! Ab quisquam assumenda nulla dolorem reiciendis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-------FOOTER------->
+    <footer>
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-center">
+                        <a href="index.html" class="footer-logo"><img src="image/logo/viona/viona-footer-logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-center">
+                        <div class="footer-links">
+                            <a href="about.html">Haqqımızda</a>
+                            <a href="products.html">Məhsullar</a>
+                            <a href="shops.html">Mağazalarımız</a>
+                            <a href="contact.html">Əlaqə</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-center">
+                        <div class="footer-links">
+                            <a href="suggestions.html">Şikayətlər və təkliflər</a>
+                            <a href="vacancy.html">Vakansiyalar</a>
+                            <a href="faq.html">Faq</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-center">
+                        <div class="footer-links">
+                            <a href="#">*1001</a>
+                            <a href="#">055 225 67 89</a>
+                            <div class="sosial-icons">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <a href="#">Proton.az</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/swiper.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

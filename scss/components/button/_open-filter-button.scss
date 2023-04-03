@@ -1,0 +1,17 @@
+/*--------OPEN FİLTERS BUTTON--------*/
+.open-filters-button{
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: var(--bg-color-1);
+    color: var(--t-color-3);
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    i{
+        margin-right: 10px;
+    }
+    &.active{
+        background-color: var(--bg-color-2);
+    }
+}

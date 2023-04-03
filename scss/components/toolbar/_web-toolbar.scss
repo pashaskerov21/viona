@@ -1,0 +1,87 @@
+/*-------------PAGE LEFT TOOLBAR-------------*/
+.web-toolbar{
+    position: fixed;
+    top: 50%;
+    transform: translate(315px,-50%);
+    right: 0;
+    z-index: 99;
+    @include column-center;
+    //animation: web-toolbar 0.4s ease forwards;
+    .button{
+        min-width: 380px;
+        background-color: var(--bg-color-3);
+        border-radius: 10px 0 0 10px;
+        box-shadow: 0 0 5px var(--black-4);
+        @include row-start;
+        padding: 7px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        transition: all 0.5s;
+        z-index: 99;
+        position: relative;
+        left: 0;
+        opacity: 0;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &:nth-child(1){
+            animation: web-tool-button 1.5s ease forwards;
+        }
+        &:nth-child(2){
+            animation: web-tool-button 1.5s ease 0.5s forwards;
+        }
+        &:nth-child(3){
+            animation: web-tool-button 1.5s ease 1s forwards;
+        }
+        .icon.furset{
+            width: 40px;
+            height: 40px;
+            @include center;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            margin-right: 20px;
+            margin-left: 3px;
+            transform: scale(0.9);
+        }
+        .icon{
+            width: 40px;
+            height: 40px;
+            @include center;
+            position: relative;
+            margin-right: 20px;
+            transform: scale(0.9);
+        }
+        .amount-badge{
+            position: absolute;
+            top: 0;
+            right: -5px;
+            background-color: #ED3237;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 500;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            @include center;
+        }
+        .label{
+            align-self: stretch;
+            @include row-start;
+            min-width: 120px;
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--black-9);
+            &:hover{
+                color: var(--t-color-2);
+            }
+        }
+        &:hover{
+            transform: translateX(-140px);
+            .icon.furset{
+                img{
+                    animation: furset-icon 0.2s ease 5;
+                }
+            }
+        }
+    }
+}

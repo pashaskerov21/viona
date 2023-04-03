@@ -1,0 +1,105 @@
+/*--------ROOM CATEGORY SECTION 2--------*/
+.room-category-section-2{
+    width: 100%;
+    //border: 1px solid #000;
+    @include center;
+    .row{
+        width: 100%;
+        .col-12{
+            padding: 0;
+            display: flex;
+            justify-content: stretch;
+            align-items: stretch;
+        }
+    }
+    .room-item{
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+        max-height: 400px;
+        position: relative;
+        .image-bg{
+            width: 100%;
+            display: flex;
+            justify-content: stretch;
+            align-items: stretch;
+            img{
+                width: 100%;
+                min-height: 200px;
+                max-height: 400px;
+                object-fit: cover;
+            }
+        }
+        .button{
+            min-width: 160px;
+            padding: 15px;
+            color: var(--t-color-3);
+            font-weight: 600;
+            text-align: center;
+            font-size: 18px;
+            @include center;
+            background-color: rgba(255,255,255,0.6);
+            border-radius: 10px;
+            &:hover{
+                background-color: var(--bg-color-2);
+            }
+        }
+        .hover-div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            @include center;
+            background-color: var(--black-1);
+            padding: 15px;
+            .design{
+                width: 100%;
+                height: 100%;
+                @include center;
+                position: relative;
+            }
+            .top-line-1, .bottom-line-1{
+                position: absolute;
+                width: 0;
+                height: 3px;
+                background-color: var(--t-color-3);
+            }
+            .top-line-2, .bottom-line-2{
+                position: absolute;
+                width: 3px;
+                height: 0;
+                background-color: var(--t-color-3);
+            }
+            .top-line-1, .top-line-2{
+                top: 0;
+                left: 0;
+            }
+            .bottom-line-1, .bottom-line-2{
+                bottom: 0;
+                right: 0;
+            }
+            &:hover{
+                .top-line-1, .bottom-line-1{
+                    width: 100%;
+                }
+                .top-line-2, .bottom-line-2{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .room-category-section-2{
+        .room-item{
+            .button{
+                min-width: 200px;
+                font-size: 22px;
+            }
+        }
+    }
+}

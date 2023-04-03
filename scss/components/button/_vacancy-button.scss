@@ -1,0 +1,19 @@
+/*------------VACANCY BUTTON------------*/
+.vacancy-button{
+    background-color: var(--bg-color-1);
+    color: var(--t-color-3);
+    font-weight: 500;
+    font-size: 20px;
+    padding: 15px;
+    margin: 15px 0;
+    min-width: 180px;
+    width: 100%;
+    max-width: 300px;
+    @include center;
+    border-radius: 10px;
+    &:hover{
+        background-color: var(--bg-color-2);
+        color: var(--t-color-3);
+        animation: pulse-2 1s ease infinite;
+    }
+}

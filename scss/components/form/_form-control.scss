@@ -1,0 +1,17 @@
+/*--------FORM CONTROL--------*/
+.form-control{
+    background-color: var(--bg-color-7);
+    border: none;
+    box-shadow: none;
+    caret-color: var(--d-color-1);
+    color: var(--t-color-1);
+    font-weight: 500;
+    padding: 15px;
+    &:focus{
+        background-color: var(--bg-color-7);
+        border: none;
+        box-shadow: none;
+        color: var(--t-color-1);
+        font-weight: 500;
+    }
+}

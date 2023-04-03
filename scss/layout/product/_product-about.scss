@@ -1,0 +1,103 @@
+.product-about-wrapper{
+    width: 100%;
+    @include center;
+    .row{
+        width: 100%;
+    }
+    .col-12{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .product-about-image{
+        width: 100%;
+        @include column-center;
+        margin-bottom: 30px;
+        .about-top-swiper{
+            margin-bottom: 15px;
+        }
+    }
+    .product-content{
+        width: 100%;
+        @include column-center;
+        .info{
+            @include column-center;
+            width: 100%;
+            .product-name,
+            .product-stars,
+            .product-price,
+            .code-wrap{
+                margin-bottom: 10px;
+            }
+            .code-wrap{
+                @include row-start;
+                .label{
+                    color: var(--black-5);
+                    margin-right: 20px;
+                }
+            }
+        }
+        .product-details-form{
+            width: 100%;
+            @include column-center;
+            padding: 10px 0;
+            .label{
+                color: var(--black-5);
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 576px){
+    .product-about-wrapper{
+        .product-content{
+            .info{
+                .product-name,
+                .product-stars,
+                .product-price,
+                .code-wrap{margin-bottom: 15px;}
+                .product-name{font-size: 28px;}
+                .product-stars{
+                    i{font-size: 20px;}
+                }
+                .product-price{
+                    .old{font-size: 22px;}
+                    .new{font-size: 28px;}
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .product-about-wrapper{
+        .product-content{
+            .info{
+                .product-name,
+                .product-stars,
+                .product-price,
+                .code-wrap{margin-bottom: 20px;}
+                .product-name{font-size: 34px;}
+                .product-stars{
+                    i{font-size: 22px;}
+                }
+                .product-price{
+                    .old{font-size: 26px;}
+                    .new{font-size: 32px;}
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .product-about-wrapper{
+        .product-content{
+            .info{
+                align-items: flex-start;
+            }
+            .product-details-form{
+                align-items: flex-start;
+            }
+        }
+    }
+}

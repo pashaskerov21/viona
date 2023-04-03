@@ -1,0 +1,46 @@
+/*--------------VIONA ABOUT PAGE--------------*/
+.about-section{
+    .row{
+        width: 100%;
+        padding: 10px 0;
+        .col-12.col-lg-6{
+            padding: 0;
+            margin-bottom: 40px;
+        }
+    }
+    .about-image{
+        width: 100%;
+        @include center;
+        img{
+            width: 100%;
+            max-width: 550px;
+            object-fit: contain;
+        }
+    }
+    .about-text{
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .about-section{
+        .row{
+            &:nth-child(2n+1){
+                flex-direction: row-reverse;
+                .about-image{
+                    justify-content: flex-end;
+                }
+            }
+        }
+        .about-image{
+            justify-content: flex-start;
+        }
+        .about-text{
+            padding: 0 30px;
+            text-align: start;
+            font-size: 16px;
+        }
+    }
+}

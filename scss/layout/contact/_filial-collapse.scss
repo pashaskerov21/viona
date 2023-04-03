@@ -1,0 +1,53 @@
+.filials-wrapper{
+    width: 100%;
+    @include column-center;
+}
+
+.filial-collapse-button{
+    width: 100%;
+    padding: 20px;
+    background-color: var(--bg-color-6);
+    border-radius: 10px;
+    @include s-between;
+    span{
+        font-size: 18px;
+        font-weight: 600;
+        padding-right: 15px;
+        color: var(--t-color-4);
+    }
+    i{
+        font-size: 18px;
+        color: var(--t-color-1);
+    }
+    &.active{
+        background-color: var(--bg-color-1);
+        span{
+            color: var(--t-color-3);
+        }
+        i{
+            color: var(--t-color-3);
+            transform: rotate(-180deg);
+        }
+    }
+}
+#filial-collapse{
+    width: 100%;
+    .filial-items{
+        width: 100%;
+        @include column-center;
+        padding: 20px 5px;
+        span{
+            width: 100%;
+            padding: 10px;
+            color: var(--t-color-4);
+            font-weight: 600;
+            border-bottom: 1px solid var(--black-2);
+            cursor: pointer;
+            &:hover{
+                background-color: var(--bg-color-2);
+                color: var(--t-color-3);
+                border-bottom-color: transparent;
+            }
+        }
+    }
+}

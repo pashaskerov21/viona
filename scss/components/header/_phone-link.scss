@@ -1,0 +1,29 @@
+/*------------PHONE LINK------------*/
+.phone-link{
+    @include row-start;
+    i{
+        color: var(--t-color-2);
+        margin-right: 5px;
+    }
+    span{
+        color: var(--t-color-1);
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &:hover{
+        span{
+            color: var(--t-color-2);
+        }
+        i{
+            animation: phone-animation 0.2s ease infinite;
+        }
+    }
+    &-2{
+        font-size: var(--fs-lg);
+        font-weight: 700;
+        color: var(--t-color-1);
+        &:hover{
+            color: var(--t-color-2);
+        }
+    }
+}

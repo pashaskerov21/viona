@@ -1,0 +1,24 @@
+/*-------------VİONA FAQ PAGE-------------*/
+.faq-section{
+    margin-bottom: 50px;
+}
+#faq-accordion{
+    width: 100%;
+    margin-top: 30px;
+    .accordion-button{
+        .header{
+            font-weight: 600;
+            display: block;
+        }
+        &:focus{
+            .header{
+                color: var(--t-color-4);
+            }
+        }
+        &:not(.collapsed){
+            .header{
+                color: var(--t-color-3);
+            }
+        }
+    }
+}

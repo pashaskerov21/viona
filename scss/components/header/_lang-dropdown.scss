@@ -1,0 +1,45 @@
+/*-------------LANGUAGE DROPDOWN-------------*/
+.language-dropdown{
+    .dropdown-toggle{
+        a{
+            color: var(--t-color-1);
+            font-size: 20px;
+            font-weight: 600;
+        }
+        &::after{
+            display: none;
+        }
+        &:hover a{
+            color: var(--t-color-2);
+        }
+    }
+    .dropdown-menu{
+        min-width: 70px;
+        .links{
+            width: 100%;
+            padding: 0 5px;
+            @include column-center;
+            a{
+                width: 100%;
+                text-align: center;
+                color: var(--t-color-1);
+                font-size: 20px;
+                font-weight: 700;
+                &:hover{
+                    background-color: var(--t-color-1);
+                    color: var(--t-color-3);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 380px){
+    .language-dropdown{
+        .dropdown-toggle{
+            a{
+                font-size: 26px;
+            }
+        }
+    }
+}

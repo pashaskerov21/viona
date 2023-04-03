@@ -1,0 +1,19 @@
+/*----------GRADIENT BADGE----------*/
+.gradient-badge{
+    @include center;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #00477F 0%, #5AA058 100%);
+    user-select: none;
+    cursor: normal;
+    img{
+        margin-right: 10px;
+        animation: furset-icon 0.2s ease infinite;
+    }
+    span{
+        color: var(--t-color-3);
+        font-weight: 600;
+        font-size: 18px;
+        display: block;
+    }
+}

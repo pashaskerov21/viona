@@ -1,0 +1,186 @@
+/*----------------animations----------------*/
+
+@keyframes pulse-1 {
+    0% {box-shadow: 0 0 0 0 var(--d-color-1);}
+    80% {box-shadow: 0 0 0 10px rgba(255, 134, 134, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(255, 134, 134, 0);}
+}
+@keyframes pulse-2 {
+    0% {box-shadow: 0 0 0 0 var(--d-color-2);}
+    80% {box-shadow: 0 0 0 10px rgba(255, 134, 134, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(255, 134, 134, 0);}
+}
+@keyframes pulse-3 {
+    0% {box-shadow: 0 0 0 0 var(--d-color-3);}
+    80% {box-shadow: 0 0 0 10px rgba(255, 134, 134, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(255, 134, 134, 0);}
+}
+@keyframes scroll-button{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes mobile-toolbar{
+    0%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes call-button{
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes chat-button{
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes web-tool-button{
+    0%{
+        left: 0;
+        opacity: 0;
+    }
+    50%{
+        left: -120px;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+@keyframes fix-header{
+    0%{
+        transform: translateY(-500px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes phone-animation {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(12deg);
+    }
+    50% {
+      transform: rotate(0);
+    }
+    75% {
+      transform: rotate(-12deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+@keyframes reset-button{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(-2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes favorite-button{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(0.96);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.04);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes heart-icon{
+    0%{
+        transform: scale(0)
+    }
+    50%{
+        transform: scale(1.4)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+@keyframes furset-icon{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes product-hidden-item{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes counter-span{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.4);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes basket-icon{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,20 @@
+/*-------FORM GENERAL-------*/
+.form-general{
+    width: 100%;
+    @include column-center;
+    .form-item{
+        width: 100%;
+        @include column-start;
+        margin-bottom: 25px;
+    }
+    label{
+        padding: 5px 8px;
+    }
+    .form-control{
+        width: 100%;
+    }
+}
+.form-general.login-form{
+    margin-bottom: 25px;
+    max-width: 700px;
+}

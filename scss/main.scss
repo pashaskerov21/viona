@@ -1,0 +1,127 @@
+@import 'root';
+@import 'mixin';
+@import 'basic';
+@import 'animation';
+
+// toolbar
+@import 'components/toolbar/page-scroll-button';
+@import 'components/toolbar/web-toolbar';
+
+// title
+@import 'components/title/section-header';
+
+// button
+@import 'components/button/about-button';
+@import 'components/button/accordion-button';
+@import 'components/button/basket-button';
+@import 'components/button/close-button';
+@import 'components/button/confirm-order-button';
+@import 'components/button/favorite-button';
+@import 'components/button/filter-collapse-button';
+@import 'components/button/form-submit-button';
+@import 'components/button/open-filter-button';
+@import 'components/button/product-pagination';
+@import 'components/button/vacancy-button';
+
+// product components
+@import 'components/product/basket-prices';
+@import 'components/product/color-checkbox';
+@import 'components/product/comments';
+@import 'components/product/dates-wrapper';
+@import 'components/product/description-button';
+@import 'components/product/description-button';
+@import 'components/product/gradient-badge';
+@import 'components/product/price-range';
+@import 'components/product/product-amount';
+@import 'components/product/product-badge';
+@import 'components/product/product-code';
+@import 'components/product/product-image';
+@import 'components/product/product-name';
+@import 'components/product/product-price';
+@import 'components/product/product-properties';
+@import 'components/product/product-stars';
+@import 'components/product/sort-filters';
+
+// card
+@import 'components/card/furset-card';
+@import 'components/card/product-card';
+@import 'components/card/room-category-card';
+
+// form
+@import 'components/form/form-general';
+@import 'components/form/file-input';
+@import 'components/form/form-buttons-row';
+@import 'components/form/form-check';
+@import 'components/form/form-control';
+@import 'components/form/textarea';
+
+// swiper
+@import 'components/swiper/swiper';
+@import 'components/swiper/swiper-button';
+@import 'components/swiper/swiper-pagination';
+@import 'components/swiper/banner-swiper';
+@import 'components/swiper/furset-card-swiper';
+@import 'components/swiper/partner-swiper';
+@import 'components/swiper/product-about-swiper';
+@import 'components/swiper/product-color-swiper';
+@import 'components/swiper/products-swiper';
+
+// hedader components
+@import 'components/header/categories-wrapper';
+@import 'components/header/general-icons';
+@import 'components/header/header-buttons';
+@import 'components/header/header-logo';
+@import 'components/header/lang-dropdown';
+@import 'components/header/phone-link';
+@import 'components/header/search-input';
+@import 'components/header/sosial-icons';
+@import 'components/header/top-nav-lang';
+
+
+// layout
+
+// header section
+@import 'layout/header/header';
+@import 'layout/header/top-navbar';
+@import 'layout/header/mobile-navbar';
+@import 'layout/header/mobile-menu';
+@import 'layout/header/search-offcanvas';
+@import 'layout/header/general-header';
+
+// home section
+@import 'layout/home/furset-section';
+@import 'layout/home/why-us-section';
+@import 'layout/home/room-category-section';
+@import 'layout/home/counter-section';
+
+// footer
+@import 'layout/footer/footer';
+
+// product pages
+@import 'layout/product/product-about';
+@import 'layout/product/products';
+
+
+// about page
+@import 'layout/about/about';
+// account page
+@import 'layout/account/account';
+// basket pages
+@import 'layout/basket/basket-edit';
+@import 'layout/basket/basket-form';
+// contact page
+@import 'layout/contact/filial-collapse';
+@import 'layout/contact/filial-container';
+@import 'layout/contact/muraciet-form';
+
+// shop
+@import 'layout/shop/shop.scss';
+
+// footer pages
+@import 'layout/footer-pages/faq';
+@import 'layout/footer-pages/suggestion';
+@import 'layout/footer-pages/vacancy';
+
+
+
+

@@ -1,0 +1,16 @@
+/*-----------PRODUCT PRICE-----------*/
+.product-price{
+    @include row-start;
+    .old{
+        font-size: 18px;
+        color: var(--t-color-1);
+        text-decoration: line-through;
+        margin-right: 15px;
+        font-weight: 600;
+    }
+    .new{
+        font-size: 24px;
+        color: var(--t-color-5);
+        font-weight: 700;
+    }
+}

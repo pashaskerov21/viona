@@ -1,0 +1,29 @@
+/*------------SEARCH INPUT------------*/
+.search-input{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    @include center;
+    background-color: #EDEDED;
+    input{
+        padding: 12px 15px;
+        padding-right: 45px;
+        width: 100%;
+        background-color: #EDEDED !important;
+        &::placeholder{
+            color: var(--t-color-1);
+            font-weight: 700;
+        }
+    }
+    button{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin: 0 10px;
+    }
+    form{
+        width: 100%;
+        position: relative;
+    }
+}

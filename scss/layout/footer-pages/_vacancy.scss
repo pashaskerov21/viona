@@ -1,0 +1,100 @@
+/*----------VIONA VACANCY PAGE----------*/
+.vacancy-section{
+    margin-bottom: 50px;
+}
+#vacancy-accordion{
+    width: 100%;
+    .accordion-button{
+        .header{
+            font-weight: 600;
+            font-size: 18px;
+            padding: 10px 0;
+            display: block;
+        }
+        .icons{
+            @include column-start;
+            .icon-item{
+                margin-bottom: 10px;
+                i{
+                    color: var(--t-color-1);
+                    margin-right: 10px;
+                }
+                span{
+                    font-weight: 500;
+                }
+            }
+        }
+        &:focus{
+            .header{
+                color: var(--t-color-4);
+            }
+            .icon-item{
+                span{
+                    color: var(--t-color-4);
+                }
+            }
+        }
+        &:not(.collapsed) {
+            .header{
+                color: var(--t-color-3);
+            }
+            .icons{
+                .icon-item{
+                    i{
+                        color: var(--t-color-3);
+                    }
+                    span{
+                        color: var(--t-color-3);
+                    }
+                }
+            }
+            .main-chevron{
+                color: var(--t-color-3);
+            }
+        }
+    }
+    .vacancy-content{
+        @include column-start;
+        padding: 25px 20px;
+        max-width: 900px;
+        .header{
+            font-weight: 600;
+        }
+        ul{
+            padding: 10px 15px;
+            li{
+                list-style: "-  ";
+            }
+        }
+        table{
+            margin: 10px 0;
+            td:first-child{
+                padding-right: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 576px){
+    #vacancy-accordion{
+        .accordion-button{
+            .button-name{
+                .header{
+                    font-size: 22px;
+                    padding: 15px 0;
+                }
+                .icons{
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .icon-item{
+                        margin-bottom: 0;
+                        margin-right: 50px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

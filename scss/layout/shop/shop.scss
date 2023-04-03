@@ -1,0 +1,135 @@
+/*-------------VIONA SHOPS PAGE-------------*/
+.shops-section{
+    .row{
+        width: 100%;
+        .col-12.col-md-6{
+            padding: 0;
+        }
+    }
+}
+.shop-card{
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    min-height: 150px;
+    border-radius: 10px;
+    margin-bottom: 45px;
+    cursor: pointer;
+    .filial-image{
+        width: 100%;
+        object-fit: contain;
+        max-width: 520px;
+        max-height: 400px;
+        border-radius: 10px;
+    }
+    .filial-map{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; 
+        iframe{
+            width: 100%;
+            height: 100%;   
+        }
+    }
+    .card-label{
+        @include center;
+        width: 85%;
+        max-width: 320px;
+        border-radius: 10px 0;
+        background-color: var(--bg-color-1);
+        text-align: center;
+        padding: 15px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+        span, a{
+            color: var(--t-color-3);
+            font-weight: 600;
+            font-size: 14px;
+        }
+        a{
+            display: none;
+            text-decoration: underline;
+        }
+    }
+    &:hover{
+        .filial-image{
+            z-index: -1;
+        }
+        .filial-map{
+            display: block;
+            z-index: 2;
+        }
+        .card-label{
+            opacity: 0.6;
+            span{
+                display: none;
+            }
+            a{
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 380px){
+    .shop-card{
+        .card-label{
+            min-height: 50px;
+            span, a{
+                font-size: 18px;
+            }
+            
+        }
+    }
+}
+@media only screen and (min-width: 576px){
+    .shop-card{
+        .card-label{
+            min-height: 80px;
+            span, a{
+                font-size: 20px;
+            }
+            
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .shops-section{
+        .row{
+            .col-12.col-md-6{
+                padding-left: 15px;
+                &:nth-child(2n+1){
+                    padding-left: 0;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+    .shop-card{
+        .card-label{
+            width: 65%;
+            min-height: 60px;
+            span, a{
+            font-size: 18px;
+            }
+            
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .shop-card{
+        .card-label{
+            width: 80%;
+            min-height: 80px;
+            span, a{
+            font-size: 20px;
+            }
+            
+        }
+    }
+}

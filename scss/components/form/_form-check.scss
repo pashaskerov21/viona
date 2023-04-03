@@ -1,0 +1,45 @@
+/*-----------CHECKBOXS-----------*/
+.form-check{
+    margin-bottom: 10px;
+    
+    &-input{
+        border-color: var(--black-3);
+        &:focus{
+            border-color: var(--black-3);
+            outline: 0;
+            box-shadow: none;
+        }
+        &:checked{
+            background-color: var(--d-color-2);
+            border-color: var(--d-color-2);
+        }
+    }
+    label:hover{
+        color: var(--t-color-2);
+        cursor: pointer;
+    }
+    &.secondary{
+        width: 100%;
+        @include row-start;
+        padding: 0;
+        .form-check-input{
+            min-width: 22px;
+            min-height: 22px;
+            margin: 0;
+            margin-right: 12px;
+        }
+        span{
+            font-weight: 600;
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+            a{
+                color: #000;
+                text-decoration: underline;
+                &:hover{
+                    color: var(--t-color-2);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,192 @@
+/*-----------PRODUCT CARD-----------*/
+.product-card{
+    @include column-center;
+    background-color: var(--bg-color-3);
+    width: 100%;
+    max-width: 180px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    .header{
+        width: 100%;
+        position: relative;
+        min-height: 45px;
+        .favorite-button{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .badge{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .dates-wrapper{
+            position: absolute;
+            top: 0;
+            left: 0;
+            i{
+                color: var(--t-color-1);
+                margin-right: 5px;
+            }
+            span{
+                font-weight: 600;
+                color: var(--t-color-6);
+            }
+        }
+    }
+    .body{
+        width: 100%;
+        @include column-center;
+        .product-image{
+            margin-bottom: 10px;
+        }
+        .content{
+            width: 100%;
+            @include column-start;
+            transform: translateY(-50px);
+            .product-name{
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            .product-stars{
+                margin-bottom: 5px;
+                i{
+                    font-size: 12px;
+                }
+            }
+            .product-code,
+            .product-text{
+                min-height: 26px;
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+            .product-price{
+                .old{
+                    font-size: 14px;
+                }
+                .new{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        margin-top: 8px;
+        @include column-center;
+        .basket-button{
+            padding: 10px;
+            min-width: 100px;
+            .name{
+                img{
+                    transform: scale(0.9);
+                }
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .hidden-item{
+        transform: scale(0);
+    }
+    .product-review-button{
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0);
+    }
+    &:hover{
+        box-shadow: 0 0 5px var(--black-4);
+        transform: translateY(5px);
+        .body{
+            .content{
+                transform: translateY(0);
+            }
+        }
+        .hidden-item{
+            transform: scale(1);
+        }
+        .product-review-button{
+            opacity: 1;
+            transform: translate(-50%,-50%) scale(1);
+        }
+    }
+
+}
+
+
+.products-row{
+    width: 100%;
+    padding: 10px 0;
+    .col-12{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .product-card{
+        max-width: 250px;
+        margin-bottom: 15px;
+        
+    }
+}
+
+@media only screen and (min-width: 380px){
+    .product-card{
+        max-width: 220px;
+        
+    }
+}
+@media only screen and (min-width: 500px){
+    .product-card{
+        max-width: 240px;
+        .body{
+            .content{
+                .product-name{
+                    font-size: 22px;
+                }
+               .product-stars{
+                    margin-bottom: 10px;
+                i{
+                    font-size: 16px;
+                }
+                }
+                .product-code,
+                .product-text{
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+                .product-price{
+                    .old{
+                        font-size: 18px;
+                    }
+                    .new{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .product-card{
+        max-width: 250px;
+        padding: 10px 15px;
+        .footer{
+             margin-top: 10px;
+             .basket-button{
+                 padding: 15px;
+                 .name{
+                     img{
+                         transform: scale(1);
+                     }
+                     span{
+                         font-size: 18px;
+                     }
+                 }
+             }
+         }
+    }
+}

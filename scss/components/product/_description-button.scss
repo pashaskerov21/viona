@@ -1,0 +1,28 @@
+/*--------DESCRIPTION BUTTON--------*/
+.description-button{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--d-color-1);
+    margin: 15px 0;
+    @include s-between;
+    span{
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--t-color-1);
+    }
+    i{
+        font-size: 20px;
+        color: var(--d-color-1);
+    }
+    &:hover{
+        background-color: var(--bg-color-1);
+        span{
+            color: var(--t-color-3);
+        }
+        i{
+            color: var(--t-color-3);
+        }
+    }
+}
+#description-collapse p{padding: 0 10px;}

@@ -1,0 +1,99 @@
+/*--------------VİONA BASKET EDİT PAGE--------------*/
+.basket-table-wrapper{
+    width: 100%;
+    @include column-start;
+    margin: 10px 0 20px;
+    overflow: auto;
+    .basket-table{
+        width: 100%;
+        min-width: 1000px;
+        tr{
+            border-bottom: 1px solid var(--black-1)
+        }
+        th{
+            color: var(--black-5);
+            text-align: center;
+            padding: 10px;
+        }
+        td{
+            text-align: center;
+            padding: 10px;
+            min-height: 150px;
+        }
+        .image-cell{
+            max-width: 250px;
+        }
+        .product-image{
+            width: 220px;
+            height: 120px;
+            min-height: 130px;
+            margin: auto;
+            img{
+                width: 200px;
+                max-width: 200px;
+                height: 120px;
+                min-height: 120px;
+                object-fit: contain;
+            }
+        }
+        .table-item{
+            width: 100%;
+            @include center;
+        }
+        .table-item.info{
+            @include column-start;
+        }
+        .product-size{
+            span{
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+        .color-div{
+            @include center;
+            width: 30px;
+            height: 30px;
+            border: 1px solid var(--black-5);
+            border-radius: 50%;
+            span{
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
+        }
+        .product-initial-price,
+        .product-final-price{
+            @include center;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            min-width: 100px;
+        }
+        .product-amount{
+            min-width: 160px;
+            max-width: 200px;
+        }
+        .product-delete-button{
+            padding: 0 15px;
+        }
+    }
+}
+.basket-edit-confirm-wrapper{
+    width: 100%;
+    @include column-end;
+    .confirm-order-button{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .basket-edit-data-wrapper{
+        .header{
+            span{
+                font-size: 28px;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+/*----------HOME BANNER SWIPER----------*/
+.banner-swiper-section{
+    width: 100%;
+    margin-bottom: 25px;
+    .home-banner-swiper{
+        img{
+            width: 100%;
+            min-height: 150px;
+            max-height: 200px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media only screen and (min-width: 576px){
+    .banner-swiper-section{
+        .home-banner-swiper{
+            img{
+                min-height: 200px;
+                max-height: 250px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .banner-swiper-section{
+        .home-banner-swiper{
+            img{
+                min-height: 250px;
+                max-height: 300px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .banner-swiper-section{
+        .home-banner-swiper{
+            img{
+                min-height: 300px;
+                max-height: 350px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1400px){
+    .banner-swiper-section{
+        .home-banner-swiper{
+            img{
+                min-height: 350px;
+                max-height: 400px;
+            }
+        }
+    }
+}

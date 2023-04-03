@@ -1,0 +1,11 @@
+/*----------PRODUCT STARS----------*/
+.product-stars{
+    @include center;
+    i{
+        color: #fdcd0d;
+        margin-right: 5px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

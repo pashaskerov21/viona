@@ -1,0 +1,49 @@
+/*----------MENU OFFCANCAS----------*/
+header{
+    #header-offcanvas{
+        .offcanvas-header{
+            .row{
+                width: 100%;
+                padding: 10px 0;
+            }
+        }
+        .viona-logo{
+            max-width: 180px;
+        }
+        .canvas-links{
+            width: 100%;
+            @include column-start;
+            margin-bottom: 10px;
+            a{
+                font-size: 18px;
+                color: var(--t-color-1);
+                padding: 10px;
+                font-weight: 600;
+                &:hover{
+                    background-color: var(--bg-color-1);
+                    color: var(--t-color-3);
+                }
+            }
+        }
+        .sosial-icons{
+            justify-content: flex-start;
+            margin-bottom: 10px;
+        }
+        .canvas-phone{
+            width: 100%;
+            @include row-start;
+            flex-wrap: wrap;
+            a{
+                padding: 10px;
+                color: var(--t-color-1);
+                font-weight: 600;
+                &:hover{
+                    color: var(--t-color-2);
+                    i{
+                        animation: phone-animation 0.2s ease 5;
+                    }
+                }
+            }
+        }
+    }
+}

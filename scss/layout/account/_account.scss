@@ -1,0 +1,75 @@
+/*---------VİONA ACCOUNT PAGES---------*/
+.account-section{
+    width: 100%;
+    margin-bottom: 40px;
+    .row{
+        width: 100%;
+    }
+    .col-12.col-lg-6{
+        padding: 0;
+    }
+    .login-col{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+}
+
+.links-row{
+    width: 100%;
+    @include center;
+    padding: 20px 0;
+    a{
+        color: var(--black-5);
+        font-weight: 700;
+        font-size: 20px;
+        &:first-child{
+            margin-right: 20px;
+        }
+        &.active{
+            color: #000;
+            text-decoration: underline;
+        }
+    }
+}
+.restore-password-link{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--t-color-1);
+    margin-bottom: 10px;
+    &:hover{
+        color: var(--t-color-2);
+        text-decoration: underline;
+    }
+}
+.large-logo{
+    width: 100%;
+    @include center;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .account-section{
+        .col-12.col-lg-6{
+            &:first-child{
+                padding-right: 15px;
+            }
+            &:last-child{
+                padding-left: 15px;
+            }
+        }
+    }
+    .form-submit-button{
+        align-self: flex-end;
+    }
+    .links-row{
+        justify-content: flex-start;
+    }
+    .restore-password-link{
+        align-self: flex-start;
+    }
+}

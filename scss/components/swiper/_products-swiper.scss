@@ -1,0 +1,38 @@
+/*----------PRODUCTS SWIPER-----------*/
+.products-swiper{
+    padding: 12px 0 50px;
+    .product-card{
+        margin: 5px 0;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        top: 0;
+        height: 100%;
+        background-color: transparent;
+        i{
+            width: 30px;
+            height: 30px;
+            @include center;
+            border-radius: 50%;
+            color: var(--t-color-2);
+            font-size: var(--fs-lg);
+            &:hover{
+                color: var(--t-color-3);
+                background-color: var(--bg-color-2);
+            }
+        }
+    }
+}
+
+
+
+/*---------PRODUCT THUMB/TOP SWIPERS---------*/
+.product-thumb-swiper{
+    margin-top: 5px;
+    .swiper-slide{
+        opacity: 0.5;
+    }
+    .swiper-slide-thumb-active{
+        opacity: 1;
+    }
+}

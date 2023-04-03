@@ -1,0 +1,28 @@
+header{
+    .mobile-header{
+        width: 100%;
+        background-color: var(--bg-color-3);
+        .col-6{
+            padding: 0;
+        }
+        .container{
+            @include center;
+            .row{
+                width: 100%;
+                padding: 15px 0;
+            }
+        }
+        .m-right{
+            margin-right: 10px;
+        }
+    }
+}
+@media only screen and (min-width: 380px){
+    header{
+        .mobile-header{
+            .m-right{
+                margin-right: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+/*------filter collapse button------*/
+.filter-collapse-button{
+    width: 100%;
+    background-color: #EFEFEF;
+    @include s-between;
+    padding: 15px;
+    border-radius: 10px;
+    span{
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,83 @@
+
+.filial-container{
+    width: 100%;
+    padding: 30px 0;
+    display: none;
+    &.active{
+        @include center;
+    }
+    .row{
+        width: 100%;
+        background-color: var(--bg-color-6);
+        .info{
+            width: 100%;
+            padding: 25px 10px;
+            @include column-center;
+            .header{
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            .address{
+                margin-bottom: 25px;
+                color: var(--black-7);
+                text-decoration: underline;
+                font-weight: 500;
+                &:hover{
+                    color: var(--t-color-2);
+                }
+            }
+            .phone-numbers{
+                width: 100%;
+                @include column-center;
+                span{
+                    color: var(--black-7);
+                    margin-bottom: 10px
+                }
+                .numbers{
+                    @include column-center;
+                    a{
+                    color: var(--t-color-4);
+                    margin-bottom: 15px;
+                    font-weight: 500;
+                    &:hover{
+                        color: var(--t-color-2);
+                    }
+                }
+                }
+            }
+        }
+        .filial-map{
+            width: 100%;
+            iframe{
+                width: 100%;
+                min-height: 350px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .filial-container{
+        .row{
+            .info{
+                padding: 25px 15px;
+                align-items: flex-start;
+                .header{
+                    font-size: 24px;
+                }
+                .address{
+                    font-size: 18px;
+                }
+                .phone-numbers{
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    span{
+                        margin-bottom: 0;
+                        margin-right: 15px
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+/*--------PRODUCT ABOUT SWIPER--------*/
+.about-top-swiper{
+    .swiper-button-prev,
+    .swiper-button-next{
+        background-color: var(--bg-color-2);
+    }
+    img{
+        width: 100%;
+        min-height: 150px;
+        max-height: 270px;
+        max-width: 500px;
+    }
+}
+.about-thumb-swiper{
+    img{
+        width: 100%;
+        max-width: 150px;
+        height: 50px;
+        object-fit: contain;
+    }
+}

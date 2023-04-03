@@ -1,0 +1,17 @@
+/*---------PRODUCT BADGES----------*/
+.badge{
+    padding: 12px;
+    @include center;
+    border-radius: 10px;
+    font-size: 14px;
+    color: var(--t-color-3);
+    font-weight: 500;
+    min-width: 96px;
+    align-self: flex-start;
+    &.endirim{
+        background-color: var(--bg-color-2);
+    }
+    &.new{
+        background-color: var(--bg-color-1);
+    }
+}

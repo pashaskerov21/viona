@@ -1,0 +1,236 @@
+/*------------FURSET CARD------------*/
+.furset-card{
+    width: 100%;
+    background-color: #ECECEC;
+    @include column-center;
+    padding: 15px 10px;
+    .content{
+        width: 100%;
+        @include column-center;
+        .header{
+            @include column-center;
+        }
+        .gradient-badge{
+            margin-bottom: 15px;
+        }
+        .info{
+            @include column-center;
+            .product-name,
+            .product-stars,
+            .product-text{
+                margin-bottom: 7px;
+            }
+        }
+        .dates-wrapper{
+            margin: 20px 0;
+        }
+        .footer{
+            @include column-center;
+            .buttons{
+                @include column-center;
+                .about-link{
+                    color: var(--black-9);
+                    text-decoration: underline;
+                    font-weight: 600;
+                    margin: 15px;
+                    &:hover{
+                        color: var(--t-color-2);
+                    }
+                }
+            } 
+            
+        }
+    }
+    .image{
+        width: 100%;
+        @include center;
+        img{
+            width: 100%;
+            object-fit: contain;
+            min-height: 150px;
+            max-height: 200px;
+        }
+    }
+    &.secondary{
+        .image{
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 380px){
+    .furset-card{
+        .image{
+            img{
+                max-height: 300px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 540px){
+    .furset-card{
+        flex-direction: row;
+        padding: 15px 20px;
+        .content{
+            align-items: flex-start;
+            padding-left: 10px;
+            .header{
+                align-items: flex-start;
+            }
+            .info{
+                align-items: flex-start;
+            }
+            .footer{
+                align-items: flex-start;
+                .buttons{
+                    align-items: flex-start;
+                    .about-link{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        .image{
+            img{
+                max-width: 240px;
+                max-height: 400px;
+            }
+        }
+        &.secondary{
+            flex-direction: column;
+            padding: 15px;
+            .content{
+                padding-bottom: 10px;
+                justify-content: space-between;
+                flex-direction: row;
+                padding-left: 0;
+                .header{
+                    align-items: flex-start;
+                }
+                .info{
+                    align-items: flex-start;
+                }
+                .footer{
+                    align-items: center;
+                    .buttons{
+                        align-items: center;
+                        .about-link{
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+            .image{
+                img{
+                    max-width: none;
+                    max-height: 230px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .furset-card{
+        .image{
+            justify-content: flex-end;
+            img{
+                width: auto;
+                max-width: none;
+                max-height: 420px;
+            }
+        }
+        &.secondary{
+            .image{
+                justify-content: center;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .furset-card{
+        min-height: 430px;
+        .content{
+            padding-right: 20px;
+        }
+        .image{
+            img{
+                width: 100%;
+            }
+        }
+        //large version
+        &.large{
+            padding: 15px 35px;
+            .content{
+                padding: 0 20px;
+                .gradient-badge{font-size: 24px;}
+                .product-name{font-size: 32px;}
+                .product-text{font-size: 20px;}
+                .product-price{
+                    .old{font-size: 22px;}
+                    .new{font-size: 30px;}
+                }
+                .footer{
+                    width: 100%;
+                    align-items: flex-start;
+                    .dates-wrapper{
+                        .date-item{
+                            width: 70px;
+                            height: 70px;
+                            font-size: 16px;
+                            span:first-child{
+                                font-size: 26px;
+                            }
+                        }
+                    }
+                    .buttons{
+                        width: 100%;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        .about-link{
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+            .image{
+                img{
+                    width: auto;
+                    max-width: 100%;
+                    max-height: 480px;
+                    object-fit: contain;
+                }
+            }
+        }
+        // secondary large version
+        &.secondary.large{
+            flex-direction: row;
+            padding: 15px 35px;
+            .content{
+                padding: 0 20px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .image{
+                img{
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px){
+    .furset-card{
+        min-height: 460px;
+        &.large{
+            padding: 10px 60px;
+        }
+        &.large.secondary{
+            padding: 10px 60px;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+/*-----------GENERAL ICONS-----------*/
+.general-icons{
+    @include center;
+    padding: 10px 0;
+    .item{
+        @include column-center;
+        margin-right: 5px;
+        &:last-child{
+            margin-right: 0;
+        }
+        .icon{
+            width: 50px;
+            height: 50px;
+            @include center;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            i{
+                font-size: 26px;
+                color: var(--black-5);
+                &.fa-solid.fa-heart{
+                    display: none;
+                }
+            }
+        }
+        span{
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--black-9);
+        }
+        &.furset{
+            &:hover{
+                .icon{
+                    i{
+                        animation: furset-icon 0.2s ease infinite;
+                    }
+                }
+            }
+        }
+        &:hover{
+            .icon{
+                background: var(--gradient-1);
+                transform: scale(1.1);
+                i{
+                    &.fa-regular.fa-heart{
+                        display: none;
+                    }
+                    &.fa-solid.fa-heart{
+                        display: block;
+                    }
+                    color: #fff;
+                    transform: scale(0.9);
+                }
+            }
+            span{
+                color: var(--t-color-2);
+            }
+        }
+    }
+}

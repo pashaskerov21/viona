@@ -1,0 +1,70 @@
+/*price range wrapper*/
+.range-wrapper{
+    width: 100%;
+    padding: 15px 0;
+    .price-input {
+        margin: 20px 0;
+        width: 100%;
+        @include s-between;
+        .field{
+            position: relative;
+            @include center;
+            input{
+                min-width: 40px;
+                max-width: 50px;
+                font-size: 16px;
+                text-align: center;
+                border: none;
+                outline: none;
+                font-weight: 500;
+                color: var(--t-color-1);
+                padding: 5px;
+                &:focus{
+                    background-color: var(--bg-color-1);
+                    color: #fff;
+                    margin-right: 5px;
+                }
+            }
+            input[type="number"]::-webkit-outer-spin-button,
+            input[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+            span{
+                font-size: 16px;
+                font-weight: 500;
+                color: var(--t-color-1);
+            }
+        }
+    }
+    .slider{
+        height: 6px;
+        border-radius: 5px;
+        background: var(--d-color-1);
+        position: relative;
+        transition: 0s;
+    }
+    .range-input{
+        position: relative;
+        input{
+            position: absolute;
+            top: -5px;
+            height: 5px;
+            width: 100%;
+            pointer-events: none;
+            background: none;
+            appearance: none;
+            -webkit-appearance: none;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            height: 17px;
+            width: 17px;
+            border-radius: 50%;
+            pointer-events: auto;
+            -webkit-appearance: none;
+            background-color: var(--bg-color-1);
+        }
+        input[type="range"]::-webkit-slider-thumb:active{
+            background-color: var(--bg-color-2);
+        }
+    }
+}

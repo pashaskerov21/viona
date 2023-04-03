@@ -1,0 +1,45 @@
+/*-------PRICES WRAPPER-------*/
+.prices-wrapper{
+    @include column-center;
+    padding: 10px 0;
+    .item{
+        width: 100%;
+        @include s-between;
+        margin-bottom: 10px;
+        .label{
+            margin-right: 30px;
+        }
+        &.last .label,
+        &.last .price{
+            font-weight: 600;
+        }
+    }
+}
+
+@media only screen and (min-width: 576px){
+    .prices-wrapper{
+      .item{
+          .label{
+              font-size: 18px;
+          }
+          .price{
+              font-size: 18px;
+          }
+          &.last .label,
+          &.last .price{
+              font-size: 24px;
+          }
+      }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .prices-wrapper{
+        .item{
+            &.last .label,
+            &.last .price{
+                font-size: 26px;
+            }
+        }
+      }
+  }

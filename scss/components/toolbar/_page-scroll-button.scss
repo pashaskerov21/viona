@@ -1,0 +1,18 @@
+/*------SCROLL BUTTON-------*/
+.page-scroll-button{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color-2);
+    color: var(--bg-color-6);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    z-index: 99;
+    animation: scroll-button 1s ease forwards;
+}
