@@ -15,11 +15,948 @@
 <body>
 
 
+    <!--HEADER-->
+    <header>
+        <!--TOP NAVBAR-->
+        <nav class="top-navbar d-none d-sm-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-start">
+                        <a href="#" class="phone-link-2">*1001</a>
+                    </div>
+                    <div class="col-6 col-end">
+                        <div class="sosial-icons px-lg-2">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <div class="top-nav-language d-none d-lg-flex">
+                            <a href="#" class="active">Az</a>
+                            <a href="#">En</a>
+                            <a href="#">Ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--MOBILE NAVBAR-->
+        <nav class="mobile-header d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-start">
+                        <a href="index.html" class="header-logo"><img src="image/logo/viona/viona-logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-6 col-end">
+                        <a href="login.html" class="login-button m-right"><i class="fa-regular fa-circle-user"></i></a>
+                        <button class="search-button m-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#search-offcanvas">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <div class="dropdown language-dropdown m-right">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <a href="#">Az</a>
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="links">
+                                    <a href="#">En</a>
+                                    <a href="#">Ru</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#header-offcanvas">
+                            <i class="fa-sharp fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--MOBILE MENU-->
+        <div class="offcanvas offcanvas-start" id="header-offcanvas">
+            <div class="offcanvas-header">
+                <a href="index.html" class="header-logo"><img src="image/logo/viona/viona-logo.png" alt="logo"></a>
+                <button class="close-button" data-bs-dismiss="offcanvas">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="category-container mobile">
+                    <div class="category">
+                        <div class="name general">
+                            <div class="link"><a href="#"><img src="image/category-icon/viona/qonaq-icon.png" alt="cat-icon"> Qonaq otağı</a></div>
+                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                        <div class="menu general d-none">
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Qonaq otağı kateqoriya 1</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Qonaq otağı məhsul 1.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Qonaq otağı məhsul 1.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Qonaq otağı məhsul 1.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Qonaq otağı kateqoriya 2</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Qonaq otağı məhsul 2.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Qonaq otağı məhsul 2.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Qonaq otağı məhsul 2.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Qonaq otağı kateqoriya 3</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Qonaq otağı məhsul 3.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Qonaq otağı məhsul 3.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Qonaq otağı məhsul 3.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="name general">
+                            <div class="link"><a href="#"><img src="image/category-icon/viona/yataq-icon.png" alt="cat-icon"> Yataq otağı</a></div>
+                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                        <div class="menu general d-none">
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Yataq otağı kateqoriya 1</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yataq otağı məhsul 1.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yataq otağı məhsul 1.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yataq otağı məhsul 1.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Yataq otağı kateqoriya 2</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yataq otağı məhsul 2.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yataq otağı məhsul 2.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yataq otağı məhsul 2.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Yataq otağı kateqoriya 3</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yataq otağı məhsul 3.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yataq otağı məhsul 3.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yataq otağı məhsul 3.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="name general">
+                            <div class="link"><a href="#"><a href="#"><img src="image/category-icon/viona/usaq-icon.png" alt="cat-icon"> Uşaq otağı</a></div>
+                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                        <div class="menu general d-none">
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Uşaq otağı kateqoriya 1</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Uşaq otağı məhsul 1.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Uşaq otağı məhsul 1.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Uşaq otağı məhsul 1.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Uşaq otağı kateqoriya 2</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Uşaq otağı məhsul 2.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Uşaq otağı məhsul 2.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Uşaq otağı məhsul 2.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Uşaq otağı kateqoriya 3</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Uşaq otağı məhsul 3.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Uşaq otağı məhsul 3.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Uşaq otağı məhsul 3.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="name general">
+                            <div class="link"><a href="#"><a href="#"><img src="image/category-icon/viona/metbex-icon.png" alt="cat-icon"> Mətbəx</a></div>
+                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                        <div class="menu general d-none">
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Mətbəx kateqoriya 1</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Mətbəx məhsul 1.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Mətbəx məhsul 1.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Mətbəx məhsul 1.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Mətbəx kateqoriya 2</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Mətbəx məhsul 2.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Mətbəx məhsul 2.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Mətbəx məhsul 2.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Mətbəx kateqoriya 3</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Mətbəx məhsul 3.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Mətbəx məhsul 3.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Mətbəx məhsul 3.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="name general">
+                            <div class="link"><a href="#"><a href="#"><img src="image/category-icon/viona/yumsaq-icon.png" alt="cat-icon"> Yumşaq mebel</a></div>
+                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                        <div class="menu general d-none">
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Yumşaq mebel kateqoriya 1</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yumşaq mebel məhsul 1.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yumşaq mebel məhsul 1.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yumşaq mebel məhsul 1.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Yumşaq mebel kateqoriya 2</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yumşaq mebel məhsul 2.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yumşaq mebel məhsul 2.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yumşaq mebel məhsul 2.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <div class="name">
+                                    <div class="link"><a href="#">Yumşaq mebel kateqoriya 3</a></div>
+                                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="menu d-none">
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yumşaq mebel məhsul 3.1</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yumşaq mebel məhsul 3.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="name">
+                                            <div class="link"><a href="#">Yumşaq mebel məhsul 3.2</a></div>
+                                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas-links">
+                    <a href="about.html">Haqqımızda</a>
+                    <a href="products.html">Məhsullar</a>
+                    <a href="shops.html">Mağazalarımız</a>
+                    <a href="contact.html">Əlaqə</a>
+                </div>
+                <div class="sosial-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="canvas-phone">
+                    <a href="#"><i class="fa-solid fa-phone"></i> *1001</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i> 055 255 67 89</a>
+                </div>
+            </div>
+        </div>
+        <!--PAGE SEARCH-->
+        <div class="offcanvas offcanvas-top" id="search-offcanvas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-center">
+                        <div class="search-input">
+                            <form action="#">
+                                <input type="text" class="form-control" placeholder="Axtar">
+                                <button><img src="image/icon/search-icon.png"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-2 col-end">
+                        <button class="close-button" data-bs-dismiss="offcanvas">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--GENERAL HEADER-->
+        <nav class="general-header d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-start">
+                        <a href="index.html" class="header-logo"><img src="image/logo/viona/viona-logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-6 col-center">
+                        <div class="search-input">
+                            <form action="#">
+                                <input type="text" class="form-control">
+                                <button><img src="image/icon/search-icon.png"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-3 col-end">
+                        <div class="general-icons">
+                            <a href="fursetler.html" class="item furset">
+                                <div class="icon">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <span>Fürsətlər</span>
+                            </a>
+                            <a href="login.html" class="item">
+                                <div class="icon">
+                                    <i class="fa-regular fa-circle-user"></i>
+                                </div>
+                                <span>Giriş</span>
+                            </a>
+                            <a href="basket-edit.html" class="item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>Səbət</span>
+                            </a>
+                            <a href="favori-products.html" class="item">
+                                <div class="icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <span>Favori</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-container large-screen">
+                        <div class="category general">
+                            <div class="name general">
+                                <a href="#"><img src="image/category-icon/viona/qonaq-icon.png" alt="cat-icon"> Qonaq otağı</a>
+                            </div>
+                            <div class="sub-menu general d-none">
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Qonaq otağı kateqoriya 1</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                    <div class="alt-menu d-none">
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Qonaq otağı məhsul 2.1</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Qonaq otağı məhsul 2.2</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Qonaq otağı məhsul 2.3</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Qonaq otağı kateqoriya 2</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                    <div class="alt-menu d-none">
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Qonaq otağı məhsul 2.1</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Qonaq otağı məhsul 2.2</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Qonaq otağı məhsul 2.3</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Qonaq otağı kateqoriya 3</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category general">
+                            <div class="name general">
+                                <a href="#"><img src="image/category-icon/viona/yataq-icon.png" alt="cat-icon"> Yataq otağı</a>
+                            </div>
+                            <div class="sub-menu general d-none">
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Yataq otağı kateqoriya 1</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                    <div class="alt-menu d-none">
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Yataq otağı məhsul 2.1</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Yataq otağı məhsul 2.2</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Yataq otağı məhsul 2.3</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Yataq otağı kateqoriya 2</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                    <div class="alt-menu d-none">
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Yataq otağı məhsul 1.1</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Yataq otağı məhsul 1.2</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Yataq otağı məhsul 1.3</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Yataq otağı kateqoriya 3</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category general">
+                            <div class="name general">
+                                <a href="#"><img src="image/category-icon/viona/usaq-icon.png" alt="cat-icon"> Uşaq otağı</a>
+                            </div>
+                            <div class="sub-menu general d-none">
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Uşaq otağı kateqoriya 1</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                    <div class="alt-menu d-none">
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Uşaq otağı məhsul 2.1</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Uşaq otağı məhsul 2.2</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Uşaq otağı məhsul 2.3</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Uşaq otağı kateqoriya 2</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                    <div class="alt-menu d-none">
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Uşaq otağı məhsul 1.1</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Uşaq otağı məhsul 1.2</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Uşaq otağı məhsul 1.3</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Uşaq otağı kateqoriya 3</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category general">
+                            <div class="name general">
+                                <a href="#"><img src="image/category-icon/viona/metbex-icon.png" alt="cat-icon"> Mətbəx</a>
+                            </div>
+                            <div class="sub-menu general d-none">
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Mətbəx kateqoriya 1</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                    <div class="alt-menu d-none">
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Mətbəx məhsul 2.1</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Mətbəx məhsul 2.2</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Mətbəx məhsul 2.3</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Mətbəx kateqoriya 2</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                    <div class="alt-menu d-none">
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Mətbəx məhsul 1.1</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Mətbəx məhsul 1.2</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Mətbəx məhsul 1.3</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Mətbəx kateqoriya 3</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category general">
+                            <div class="name general">
+                                <a href="#"><img src="image/category-icon/viona/yumsaq-icon.png" alt="cat-icon"> Yumşaq Mebel</a>
+                            </div>
+                            <div class="sub-menu general d-none">
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Yumşaq Mebel kateqoriya 1</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                    <div class="alt-menu d-none">
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Yumşaq Mebel məhsul 2.1</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Yumşaq Mebel məhsul 2.2</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Yumşaq Mebel məhsul 2.3</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Yumşaq Mebel kateqoriya 2</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                    <div class="alt-menu d-none">
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Yumşaq Mebel məhsul 1.1</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Yumşaq Mebel məhsul 1.2</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="category">
+                                            <div class="name">
+                                                <div class="link"><a href="#">Yumşaq Mebel məhsul 1.3</a></div>
+                                                <button><i class="fa-solid fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category">
+                                    <div class="name">
+                                        <div class="link"><a href="#">Yumşaq Mebel kateqoriya 3</a></div>
+                                        <button><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="range-wrapper w-50">
+            <div class="slider"></div>
+            <div class="range-input">
+                <input type="range" class="range-min" value="0" min="0" max="500">
+                <input type="range" class="range-max" value="500" min="0" max="500">
+            </div>
+            <div class="price-input">
+              <div class="field">
+                  <input type="number" class="input-min">
+                  <span>AZN</span>
+              </div>
+              <div class="field">
+                  <input type="number" class="input-max">
+                  <span>AZN</span>
+              </div>
+          </div>
+        </div>
+    </div>
+
     <main>
         <section>
-            <div class="container py-5">
+            <div class="container">
                 <div class="product-card">
                     <div class="header">
+                        <span class="badge endirim">Endirim</span>
+                        <button class="review-button" type="button" data-bs-toggle="modal" data-bs-target="#product-modal-1">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
                         <button class="favorite-button hidden-item">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-heart d-none"></i>
@@ -30,13 +967,19 @@
                             <div class="swiper product-top-swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="image/products/product-1.png">
+                                        <a href="product-about.html">
+                                            <img src="image/products/product-1.png">
+                                        </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="image/products/product-1.png">
+                                        <a href="product-about.html">
+                                            <img src="image/products/product-1.png">
+                                        </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="image/products/product-1.png">
+                                        <a href="product-about.html">
+                                            <img src="image/products/product-1.png">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +1000,7 @@
                             </div>
                         </div>
                         <div class="content">
-                            <a href="#" class="product-name">Divan künc divanı</a>
+                            <a href="#" class="product-name">Divan</a>
                             <div class="product-stars">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -85,6 +1028,79 @@
         </section>
     </main>
 
+    <!--PRODUCT MODALS-->
+    <div class="modal fade product-modal" id="product-modal-1">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close-button" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <div class="product-header">
+                            <a href="#" class="product-name">Divan</a>
+                            <span class="product-text mb-2">Lorem ipsum dolor</span>
+                            <div class="d-flex">
+                                <div class="product-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <span class="ms-3">(12)</span>
+                            </div>
+                        </div>
+                        <div class="modal-image">
+                            <div class="swiper modal-top-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="image/products/product-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/products/product-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/products/product-1.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper modal-thumb-swiper" thumbsSlider="">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="image/products/product-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/products/product-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/products/product-1.png">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
+                                <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <span class="old">900 ₼</span>
+                            <span class="new">790 ₼</span>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Mollitia ratione repellat praesentium labore totam, quos 
+                                reprehenderit voluptate consequatur velit explicabo veritatis 
+                                dolore minus doloribus asperiores, obcaecati hic incidunt eos necessitatibus!
+                            </p>
+                        </div>
+                        <a href="product-about.html" class="modal-button">Ətraflı</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>

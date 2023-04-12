@@ -5,8 +5,8 @@ const priceRangeInputFunc = () => {
         const progress = document.querySelector(".slider .progress");
         
         if(rangeInput[0].min == rangeInput[1].min && rangeInput[0].max == rangeInput[1].max){
-            rangeInput[0].value = rangeInput[0].min;
-            rangeInput[1].value = rangeInput[1].max;
+            //rangeInput[0].value = rangeInput[0].min;
+            //rangeInput[1].value = rangeInput[1].max;
             priceInput[0].value = rangeInput[0].value;
             priceInput[1].value = rangeInput[1].value;
         }

@@ -1,8 +1,11 @@
 import basketButtonFunc from "./components/BasketButton.js";
 import basketCalculateFunc from "./components/BasketCalculate.js";
 import { formButtonRowFunc, paymentCardInfoFunc } from "./components/BasketForm.js";
+import categoryLargeScreenFunction from "./components/CategoryLargeScreen.js";
+import categoryMobileFunction from "./components/CategoryMobile.js";
 import { colorRadioButtonFunct, colorSwiperButtonFunc } from "./components/ColorButton.js";
 import contactFilialFunc from "./components/ContactFilial.js";
+import creditCalculatorFunc from "./components/CreditCalculator.js";
 import dateCounterFunc from "./components/DateCounter.js";
 import descriptionButtonFunc from "./components/DescriptionButton.js";
 import favoriButtonFunct from "./components/FavoriButton.js";
@@ -37,3 +40,6 @@ formButtonRowFunc();
 paymentCardInfoFunc();
 contactFilialFunc();
 priceRangeInputFunc();
+categoryMobileFunction();
+categoryLargeScreenFunction();
+creditCalculatorFunc();

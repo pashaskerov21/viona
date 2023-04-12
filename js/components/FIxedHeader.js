@@ -2,7 +2,7 @@ const fixHeaderFunc = () => {
     if(document.querySelector("header")){
         let mobileHeader = document.querySelector('.mobile-header');
         let generalHeader = document.querySelector('.general-header');
-        let categoryRow = document.querySelector('.general-header .categories-wrapper');
+        let categoryRow = document.querySelector('.general-header .category-container');
     
         window.addEventListener("scroll",function(){
             if(scrollY > 280){

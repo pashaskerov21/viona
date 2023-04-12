@@ -3,7 +3,7 @@
     @include column-center;
     background-color: var(--bg-color-3);
     width: 100%;
-    max-width: 180px;
+    max-width: 220px;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
@@ -11,6 +11,18 @@
         width: 100%;
         position: relative;
         min-height: 45px;
+        .review-button{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--bg-color-1);
+            position: absolute;
+            right: 0;
+            i{
+                color: #fff;
+                font-size: 18px;
+            }
+        }
         .favorite-button{
             position: absolute;
             top: 0;
@@ -101,6 +113,9 @@
     &:hover{
         box-shadow: 0 0 5px var(--black-4);
         transform: translateY(5px);
+        .review-button{
+            transform: translateX(-45px);
+        }
         .body{
             .content{
                 transform: translateY(0);

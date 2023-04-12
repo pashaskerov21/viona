@@ -3,6 +3,44 @@
     width: 100%;
     @include s-between;
     padding: 30px 0;
+    .category-container{
+        width: 100%;
+        position: relative;
+    }
+    .category-name{
+        width: 100%;
+        @include s-between;
+        &.enable{
+            button{
+                display: flex;
+            }
+        }
+        button{
+            display: none;
+            padding: 10px;
+            color: var(--t-color-1);
+            &:hover{
+                background-color: var(--bg-color-1);
+                color: #fff;
+                border-radius: 5px;
+            }
+        }
+    }
+    .category-menu{
+        width: 100%;
+        @include column-center;
+        &.main{
+            .category-name{
+                button{
+                    color: var(--t-color-2);
+                    &:hover{
+                        background-color: var(--bg-color-2);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
     .category-link{
         padding: 0;
         @include center;
@@ -49,17 +87,15 @@
     }
     &.secondary{
         flex-direction: column;
+        align-items: flex-start;
         padding: 10px 0;
         .category-link{
             justify-content: flex-start;
-            width: 100%;
+            
             padding: 7px 0;
             .icon{
                 margin-right: 10px;
                 width: 40px;
-            }
-            span{
-                font-size: 18px;
             }
         }
     }

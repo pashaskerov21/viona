@@ -1,0 +1,249 @@
+.category-container{
+    width: 100%;
+    position: relative;
+    &.mobile{
+        @include column-center;
+        align-items: flex-start;
+        padding: 15px 0;
+        .category{
+            width: 100%;
+            position: relative;
+            @include column-center;
+            align-items: flex-start;
+            .name{
+                width: 100%;
+                @include s-between;
+                .link{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 90%;
+                    padding: 5px 0;
+                    border-bottom: 1px solid var(--black-1);
+                }
+                img{
+                    width: 25px;
+                    height: 25px;
+                    margin-right: 5px;
+                    padding: 3px 0;
+                }
+                a{
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                &:hover{
+                    .link{
+                        border-color: var(--t-color-1);
+                        a{
+                            color: var(--t-color-1);
+                        }
+                    }
+                }
+                button{
+                    color: var(--t-color-1);
+                    padding: 10px;
+                    border-radius: 5px;
+                    i{
+                        transition: all 0.1s;
+                    }
+                    &:hover{
+                        background-color: var(--t-color-1);
+                        color: #fff;
+                    }
+                    &.active{
+                        i{
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+            }
+            .menu{
+                width: 100%;
+                @include column-center;
+                align-items: flex-start;
+                opacity: 0;
+                transform: translateY(-5px);
+                animation: category-menu 0.5s ease forwards;
+                .name{
+                    padding-left: 10px;
+                    &:hover{
+                        .link{
+                            border-color: var(--t-color-2);
+                            a{
+                                color: var(--t-color-2);
+                            }
+                        }
+                    }
+                    button{
+                        color: var(--t-color-2);
+                        
+                        &:hover{
+                            background-color: var(--t-color-2);
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.large-screen{
+        @include s-between;
+        .category{
+            position: relative;
+            &.general{
+                .name{
+                    min-height: 60px;
+                    @include center;
+                    position: relative;
+                    cursor: pointer;
+                    img{
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 10px;
+                    }
+                    a{
+                        @include center;
+                        color: #000;
+                    }
+                    &:hover{
+                        a{
+                            color: var(--t-color-1);
+                        }
+                    }
+                }
+                &:last-child{
+                    .sub-menu{
+                        right: 0;
+                    }
+                }
+                .sub-menu{
+                    position: absolute;
+                    top: 90%;
+                    //left: 0;
+                    min-width: 280px;
+                    width: 100%;
+                    max-width: 320px;
+                    //min-height: 30vh;
+                    max-height: 55vh;
+                    overflow-y: auto;
+                    box-shadow: 0 0 5px var(--black-3);
+                    border-radius: 5px;
+                    padding: 20px 15px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    opacity: 0;
+                    animation: category-menu 0.5s ease forwards;
+                    background-color: #fff;
+                    z-index: 9999;
+                    &::-webkit-scrollbar{
+                        width: 4px; 
+                        height: 4px;
+                    }
+                    &::-webkit-scrollbar-thumb{
+                        background-color: var(--bg-color-2);
+                    }
+                    .category{
+                        width: 100%; 
+                        .name{
+                            min-height: auto;
+                            @include s-between;
+                            &::after{
+                                display: none;
+                            }
+                            .link{
+                                padding: 5px 0;
+                                width: 90%;
+                                position: relative;
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    width: 0;
+                                    height: 1px;
+                                    background-color: var(--t-color-1);
+                                    transition: 0.2s;
+                                }
+                                a{
+                                    justify-content: flex-start;
+                                }
+                            }
+                            &:hover{
+                                .link{
+                                    //width: 80%;
+                                    &::after{
+                                        width: 100%;
+                                    }
+                                    a{
+                                        color: var(--t-color-1);
+                                    }
+                                }
+                            }
+                            button{
+                                padding: 10px 0;
+                                color: var(--t-color-1);
+                                border-radius: 5px;
+                                &.active{
+                                    i{
+                                        transform: rotate(90deg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .alt-menu{
+                        width: 100%;
+                        opacity: 0;
+                        animation: category-menu 0.5s ease forwards;
+                        .category{
+                            .name{
+                                .link{
+                                    position: relative;
+                                    padding-left: 10px;
+                                    &::after{
+                                        position: absolute;
+                                        content: '';
+                                        width: 10px;
+                                        height: 1px;
+                                        background-color: #000;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        left: 0;
+                                    }
+                                    a{
+                                        margin-left: 5px;
+                                    }
+                                }
+                                &:hover{
+                                    .link{
+                                        a{
+                                            color: var(--t-color-2);
+                                        }
+                                    }
+                                }
+                                .link{
+                                    &::after{
+                                        background-color: var(--t-color-2);
+                                    }
+                                }
+                                button{
+                                    color: var(--t-color-2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes category-menu{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
