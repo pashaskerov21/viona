@@ -7,8 +7,9 @@
     img{
         width: 100%;
         min-height: 150px;
-        max-height: 270px;
+        max-height: 500px;
         max-width: 500px;
+        object-fit: contain;
     }
 }
 .about-thumb-swiper{

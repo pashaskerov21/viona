@@ -92,6 +92,16 @@
         .category{
             position: relative;
             &.general{
+                // &:first-child{
+                //     .name.general{
+                //         padding-left: 0;
+                //     }
+                // }
+                // &:last-child{
+                //     .name.general{
+                //         padding-right: 0;
+                //     }
+                // }
                 .name{
                     min-height: 60px;
                     @include center;
@@ -103,6 +113,7 @@
                         margin-right: 10px;
                     }
                     a{
+                        font-size: 18px;
                         @include center;
                         color: #000;
                     }
@@ -118,6 +129,9 @@
                     }
                 }
                 .sub-menu{
+                    a{
+                        font-size: 16px;
+                    }
                     position: absolute;
                     top: 90%;
                     //left: 0;

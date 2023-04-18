@@ -58,7 +58,13 @@
                 .reset-button{
                     border: 1px solid var(--d-color-5);
                     color: var(--t-color-5);
+                    a{
+                        color: var(--t-color-5);
+                    }
                     &:hover{
+                        a{
+                            color: #fff;
+                        }
                         background-color: var(--bg-color-5);
                         color: var(--t-color-3);
                         animation: reset-button 0.1s ease 5;

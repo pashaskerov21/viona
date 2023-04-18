@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   /*======BACKGROUND-COLORS=======*/
   --bg-color-1: #00477F;
@@ -1137,6 +1137,90 @@ div[class~=col] {
     margin-right: 25px;
   }
 }
+.credit-calculator {
+  width: 100%;
+  max-width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.credit-calculator .row {
+  width: 100%;
+  padding: 20px 0;
+  border: 1px solid var(--t-color-1);
+  border-radius: 10px;
+}
+.credit-calculator .col-12, .credit-calculator .col-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.credit-calculator .item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.credit-calculator .item span {
+  text-align: center;
+}
+.credit-calculator .item .label {
+  color: var(--t-color-1);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.credit-calculator .item select {
+  text-align: center;
+  max-width: 120px;
+  border-color: var(--t-color-1);
+}
+.credit-calculator .item select:focus {
+  box-shadow: none;
+}
+.credit-calculator .item select option:hover {
+  background: var(--t-color-1);
+}
+.credit-calculator .credit-button {
+  min-width: 150px;
+  width: 100%;
+  max-width: 200px;
+  align-self: flex-end;
+  padding: 12px;
+  background-color: var(--bg-color-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 20px 0;
+}
+.credit-calculator .credit-button:hover {
+  background-color: var(--bg-color-2);
+  color: #fff;
+}
+
+.credit-form-modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.credit-form-modal .modal-header h3 {
+  margin: 0;
+}
+.credit-form-modal .form-submit-button {
+  align-self: center;
+  max-width: 250px;
+}
+
+@media only screen and (min-width: 576px) {
+  .credit-calculator {
+    max-width: 700px;
+  }
+}
 /*--------DATES WRAPPER--------*/
 .dates-wrapper {
   display: flex;
@@ -1435,21 +1519,25 @@ div[class~=col] {
 }
 .product-image img {
   width: 100%;
-  height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .product-image .product-top-swiper {
   margin-bottom: 10px;
 }
+.product-image .product-top-swiper img {
+  min-height: 180px;
+  max-height: 220px;
+}
 .product-image .product-thumb-swiper img {
   width: 100%;
-  height: 40px;
+  min-height: 40px;
+  max-height: 50px;
 }
 
 @media only screen and (min-width: 1200px) {
   .product-image img {
-    height: 140px;
+    max-height: 240px;
   }
   .product-image .product-thumb-swiper img {
     height: 50px;
@@ -2543,8 +2631,10 @@ textarea.form-control {
 .about-top-swiper img {
   width: 100%;
   min-height: 150px;
-  max-height: 270px;
+  max-height: 500px;
   max-width: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .about-thumb-swiper img {
@@ -2630,43 +2720,6 @@ textarea.form-control {
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
-}
-.categories-wrapper .category-container {
-  width: 100%;
-  position: relative;
-}
-.categories-wrapper .category-name {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.categories-wrapper .category-name.enable button {
-  display: flex;
-}
-.categories-wrapper .category-name button {
-  display: none;
-  padding: 10px;
-  color: var(--t-color-1);
-}
-.categories-wrapper .category-name button:hover {
-  background-color: var(--bg-color-1);
-  color: #fff;
-  border-radius: 5px;
-}
-.categories-wrapper .category-menu {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.categories-wrapper .category-menu.main .category-name button {
-  color: var(--t-color-2);
-}
-.categories-wrapper .category-menu.main .category-name button:hover {
-  background-color: var(--bg-color-2);
-  color: #fff;
 }
 .categories-wrapper .category-link {
   padding: 0;
@@ -2842,6 +2895,7 @@ textarea.form-control {
   margin-right: 10px;
 }
 .category-container.large-screen .category.general .name a {
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2872,6 +2926,9 @@ textarea.form-control {
   animation: category-menu 0.5s ease forwards;
   background-color: #fff;
   z-index: 9999;
+}
+.category-container.large-screen .category.general .sub-menu a {
+  font-size: 16px;
 }
 .category-container.large-screen .category.general .sub-menu::-webkit-scrollbar {
   width: 4px;
@@ -3772,68 +3829,6 @@ footer .bottom a {
 .product-about-wrapper .product-about-image .about-top-swiper {
   margin-bottom: 15px;
 }
-.product-about-wrapper .credit-calculator {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
-.product-about-wrapper .credit-calculator .row {
-  width: 100%;
-  padding: 15px 0;
-  box-shadow: 0 0 5px var(--black-3);
-}
-.product-about-wrapper .credit-calculator .col-12, .product-about-wrapper .credit-calculator .col-4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 10px;
-}
-.product-about-wrapper .credit-calculator .item {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.product-about-wrapper .credit-calculator .item span {
-  text-align: center;
-}
-.product-about-wrapper .credit-calculator .item .label {
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-.product-about-wrapper .credit-calculator .item select {
-  text-align: center;
-  max-width: 120px;
-}
-.product-about-wrapper .credit-calculator .item select:focus {
-  box-shadow: none;
-  border-color: var(--t-color-1);
-}
-.product-about-wrapper .credit-calculator .item select option:hover {
-  background: var(--t-color-1);
-}
-.product-about-wrapper .credit-calculator .credit-button {
-  min-width: 150px;
-  width: 100%;
-  max-width: 200px;
-  align-self: flex-end;
-  padding: 12px;
-  background-color: var(--bg-color-1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  margin: 20px 0;
-}
-.product-about-wrapper .credit-calculator .credit-button:hover {
-  background-color: var(--bg-color-2);
-  color: #fff;
-}
 .product-about-wrapper .product-content {
   width: 100%;
   display: flex;
@@ -3997,10 +3992,16 @@ footer .bottom a {
   border: 1px solid var(--d-color-5);
   color: var(--t-color-5);
 }
+.products-section .general-row .type-filter-form .buttons .reset-button a {
+  color: var(--t-color-5);
+}
 .products-section .general-row .type-filter-form .buttons .reset-button:hover {
   background-color: var(--bg-color-5);
   color: var(--t-color-3);
   animation: reset-button 0.1s ease 5;
+}
+.products-section .general-row .type-filter-form .buttons .reset-button:hover a {
+  color: #fff;
 }
 .products-section .general-row .right-wrapper {
   width: 100%;

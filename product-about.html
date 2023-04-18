@@ -330,6 +330,63 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="credit-calculator">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4">
+                                        <div class="item">
+                                            <span class="label">Ayların sayı</span>
+                                            <select class="form-select">
+                                                <option value="3">3</option>
+                                                <option value="6">6</option>
+                                                <option value="9">9</option>
+                                                <option value="12">12</option>
+                                                <option value="15">15</option>
+                                                <option value="18">18</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <div class="item">
+                                            <span class="label">Aylıq ödəniş</span>
+                                            <div><span class="result month">0.00</span> ₼</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <div class="item">
+                                            <span class="label">Toplam</span>
+                                            <div><span class="result total">1190.00</span> ₼</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#credit-form-modal" data-bs-toggle="modal" class="credit-button">Kreditlə al</a>
+                            </div>
+                            <div class="modal fade credit-form-modal" id="credit-form-modal">
+                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3>Kreditlə al</h3>
+                                            <button class="close-button" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="#" class="form-general">
+                                                <div class="form-item">
+                                                    <label for="user-firstname">Ad*</label>
+                                                    <input type="text" class="form-control" placeholder="Adınız" id="user-firstname">
+                                                </div>
+                                                <div class="form-item">
+                                                    <label for="user-lastname">Soyad*</label>
+                                                    <input type="text" class="form-control" placeholder="Soyadınız" id="user-lastname">
+                                                </div>
+                                                <div class="form-item">
+                                                    <label for="user-message">Qeyd*</label>
+                                                    <textarea class="form-control" placeholder="Mesajınız..." id="user-message"></textarea>
+                                                </div>
+                                                <button type="submit" class="form-submit-button">Göndər</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-12 col-lg-6">
                             <div class="product-content">
