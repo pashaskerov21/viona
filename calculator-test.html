@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viona</title>
+    <link rel="icon" href="image/logo/viona/viona-icon.png">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+
+
+    <section class="product-about-section">
+        <div class="container">
+            <div class="product-about-wrapper">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="credit-calculator">
+                            <div class="row">
+                                <div class="col-12 col-sm-4">
+                                    <div class="item">
+                                        <span class="label">Ayların sayı</span>
+                                        <select class="form-select">
+                                            <option value="3">3</option>
+                                            <option value="6">6</option>
+                                            <option value="9">9</option>
+                                            <option value="12">12</option>
+                                            <option value="15">15</option>
+                                            <option value="18">18</option>
+                                        </select>
+                                        <select class="form-select percent-select">
+                                            <option value="3">3</option>
+                                            <option value="6">6</option>
+                                            <option value="9">9</option>
+                                            <option value="12">12</option>
+                                            <option value="15">15</option>
+                                            <option value="18">18</option>
+                                        </select>
+                                        <script>
+                                            let percentSelect = document.querySelector('.percent-select');
+                                            let option = percentSelect.querySelectorAll('option')
+                                            console.log(option[0].value);
+                                            console.log(option[1].value);
+                                            console.log(option[2].value);
+                                            console.log(option[3].value);
+                                            console.log(option[4].value);
+                                            percentSelect.remove();
+                                        </script>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="item">
+                                        <span class="label">Aylıq ödəniş</span>
+                                        <div><span class="result month">0.00</span> ₼</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="item">
+                                        <span class="label">Toplam</span>
+                                        <div><span class="result total">1190.00</span> ₼</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="credit-button">Kreditlə al</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/swiper.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

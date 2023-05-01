@@ -104,3 +104,8 @@ div[class~="col"]{
     font-size: 18px;
     padding: 35px 0;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}

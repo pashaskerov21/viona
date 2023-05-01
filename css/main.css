@@ -181,6 +181,11 @@ div[class~=col] {
   padding: 35px 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
 /*----------------animations----------------*/
 @keyframes pulse-1 {
   0% {
